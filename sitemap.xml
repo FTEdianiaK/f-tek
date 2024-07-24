@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+      <loc>http://f-tek.neocities.org/</loc>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>http://f-tek.neocities.org/index.html</loc>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>http://f-tek.neocities.org/art.html</loc>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>http://f-tek.neocities.org/code.html</loc>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>http://f-tek.neocities.org/games.html</loc>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>http://f-tek.neocities.org/social.html</loc>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>http://f-tek.neocities.org/brand.html</loc>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>http://f-tek.neocities.org/brand.html</loc>
+      <changefreq>never</changefreq>
+      <priority>0.6</priority>
+   </url>
+   
+   <url>
+      <loc>https://f-tek.neocities.org/not_found.html</loc>
+      <changefreq>never</changefreq>
+      <priority>0.2</priority>
+   </url>
+
+</urlset> 

@@ -1,0 +1,38 @@
+/* Base */
+body,h1,h2,h3,h4,h5,h6 {font-family:'PoppinsRegular',sans-serif;}
+html,body {height:100%;line-height:1.8;}
+/* Text Effects */
+.blink{animation: blink 1.5s linear infinite;}
+.blink-1{animation: blink 1.5s linear infinite;}
+.blink-2{animation: blink 1.5s linear infinite 0.5s;}
+.blink-3{animation: blink 1.5s linear infinite 1s;}
+.fancy{font-family:'NewTelegraphRegular',serif;}
+.hwrit{font-family:'FuntypeRegular',cursive;}
+.mono{font-family:'IntervalBook',monospace;}
+@keyframes blink {0%, 100% {opacity:1;} 50%{opacity:0;}}
+/* Image Classes */
+.prew{display:block;max-width:100%;max-height:30vh;width:auto;height:auto;margin-left:auto;margin-right:auto;}
+/* Backgrounds */
+.red-bg{background:linear-gradient(135deg,#300603,#f44336,#300603);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
+.orange-bg{background:linear-gradient(135deg,#331F00,#ff9800,#331F00);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
+.yellow-bg{background:linear-gradient(135deg,#332E00,#ffeb3b,#332E00);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
+.green-bg{background:linear-gradient(135deg,#102310,#4CAF50,#102310);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
+.blue-bg{background:linear-gradient(135deg,#031C30,#2196F3,#031C30);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
+.purple-bg{background:linear-gradient(135deg,#25092A,#9c27b0,#25092A);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
+.black-bg{background:linear-gradient(135deg,#000,#fff,#000);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 30s ease infinite;}
+.rainbow-bg{background:linear-gradient(135deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 60s ease infinite;}
+@keyframes ani-bg {0%, 100% {background-position:right bottom} 50%{background-position:left top}}
+/* Banners */
+.index-banner{background-position:center;background-size:cover;background-image:url('img/bgs/ind.jpg');min-height:25vh;}
+.art-banner{background-position:center;background-size:cover;background-image:url('img/bgs/art.jpg');min-height:25vh;}
+.code-banner{background-position:center;background-size:cover;background-image:url('img/bgs/cod.jpg');min-height:25vh;}
+.games-banner{background-position:center;background-size:cover;background-image:url('img/bgs/gam.jpg');min-height:25vh;}
+.social-banner{background-position:center;background-size:cover;background-image:url('img/bgs/soc.jpg');min-height:25vh;}
+.brand-banner{background-position:center;background-size:contain;background-repeat:repeat-x;background-image:url('img/fox.jpg');min-height:25vh;}
+.not-found-banner{background-position:center;background-size:cover;background-image:url('img/bgs/404.jpg');min-height:50vh;}
+.y2023-banner{background-position:center;background-size:cover;background-image:url('../rew/2023/bg.jpg');min-height:25vh;}
+/* W3-Addons */
+.w3-swide{letter-spacing:2px}
+.w3-pale-orange,.w3-hover-pale-orange:hover{color:#000!important;background-color:#ffeadd!important}
+.w3-pale-purple,.w3-hover-pale-purple:hover{color:#000!important;background-color:#f0ddff!important}
+.w3-hover-opacity{cursor: pointer;}
