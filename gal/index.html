@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>F_TEK</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/svg" href="../asrc/img/leaf.svg">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/poppins" type="text/css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/new-telegraph" type="text/css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/funtype" type="text/css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/interval" type="text/css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/terminal-grotesque" type="text/css">
+        <link rel="stylesheet" href="../asrc/mod.css">
+        <script data-goatcounter="https://f-tek.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    </head>
+    <body class="w3-black blue-grey-bg">
+        <!-- Header -->
+        <div class="index-banner w3-display-container w3-grayscale-min">
+            <div class="w3-display-middle w3-center w3-blue-grey w3-padding" style="white-space:nowrap;">
+                <div class="w3-animate-zoom">
+                    <h3>Hi, I'm F_TEK and welcome to</h3>
+                    <h1><b>MY WEB GALLERY</b></h1>
+                    <a href="../art.html" class="w3-button w3-black"><i class="las la-home"></i> Back to Regular Site</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="w3-container w3-center w3-transparent w3-stretch">
+            <button onclick="showAll()" class="w3-button w3-white"><i class="las la-infinity"></i> All</button>
+            <button class="w3-button w3-blue-grey w3-disabled w3-card">//</button>
+            <button onclick="showDig()" class="w3-button w3-white"><i class="las la-tablet"></i> Digital</button>
+            <button onclick="showPix()" class="w3-button w3-white"><i class="las la-th-large"></i> Pixel Art</button>
+            <button onclick="showDra()" class="w3-button w3-white"><i class="las la-pencil-alt"></i> Drawing</button>
+            <button onclick="showPai()" class="w3-button w3-white"><i class="las la-palette"></i> Paint</button>
+            <button class="w3-button w3-blue-grey w3-disabled w3-card">//</button>
+            <button onclick="showChrist()" class="w3-button w3-white"><i class="las la-gifts"></i> Christmas Cards</button>
+            <button onclick="showJijiCa()" class="w3-button w3-white"><i class="las la-cat"></i> Jiji</button>
+            <button onclick="showStream()" class="w3-button w3-white"><i class="lab la-twitch"></i> Streamers</button>
+        </div>
+
+        <div style="height:3%;"></div>
+
+        <div class="w3-container w3-center w3-blue-grey w3-padding-64 w3-stretch">
+            <div class="w3-row">
+                <div class="w3-col m2 w3-padding-small g gdra">
+                    <h3><b class="mono">Moloch the heavy judger of men!</b></h3>
+                    <img src="img/00186.jpg" class="prew w3-hover-opacity" onclick="modalOpen(this)" alt="Moloch the heavy judger of men! by F_TEK is licensed under CC BY-SA 4.0 <i class='lab la-creative-commons'></i><i class='lab la-creative-commons-by'></i><i class='lab la-creative-commons-sa'></i>">
+                    <p>
+                        A very late piece of art made for Halloween. I'm posting it just now, because I didn't want to post it during the festive season.<br>
+                        Based on the poem <a href="https://www.poetryfoundation.org/poems/49303/howl">Howl by Allen Ginsberg</a>.
+                    </p>
+                </div>
+                <div class="w3-col m2 w3-padding-small g gdra">
+                    <h3><b class="mono">Empathy</b></h3>
+                    <img src="img/00185.jpg" class="prew w3-hover-opacity" onclick="modalOpen(this)" alt="Empathy by F_TEK is licensed under CC BY-SA 4.0 <i class='lab la-creative-commons'></i><i class='lab la-creative-commons-by'></i><i class='lab la-creative-commons-sa'></i>">
+                    <p>
+                        Second part of a poster that I worked on for our Psychology class.<br>
+                        Based on <a href="https://www.youtube.com/watch?v=KZBTYViDPlQ">this video</a>.
+                    </p>
+                </div>
+                <div class="w3-col m2 w3-padding-small g gdra">
+                    <h3><b class="mono">Sympathy</b></h3>
+                    <img src="img/00184.jpg" class="prew w3-hover-opacity" onclick="modalOpen(this)" alt="Sympathy by F_TEK is licensed under CC BY-SA 4.0 <i class='lab la-creative-commons'></i><i class='lab la-creative-commons-by'></i><i class='lab la-creative-commons-sa'></i>">
+                    <p>
+                        First part of a poster that I worked on for our Psychology class.<br>
+                        Based on <a href="https://www.youtube.com/watch?v=KZBTYViDPlQ">this video</a>.
+                    </p>
+                </div>
+                <div class="w3-col m2 w3-padding-small g gdig">
+                    <h3><b class="mono">PF 2024 - Panorama</b></h3>
+                    <img src="img/00183.png" class="prew w3-hover-opacity" onclick="modalOpen(this)" alt="PF 2024 - Panorama by F_TEK is licensed under CC BY-SA 4.0 <i class='lab la-creative-commons'></i><i class='lab la-creative-commons-by'></i><i class='lab la-creative-commons-sa'></i>">
+                    <p>
+                        If you'd like to catch some of the details in this piece (even though there aren't that many of them).<br>
+                        This is a part of my Hilda animatic, which you can find <a href="https://www.youtube.com/watch?v=wxavbr-B5Is">here on Cookies NOT Included</a>.
+                    </p>
+                </div>
+                <div class="w3-col m2 w3-padding-small g gdig">
+                    <h3><b class="mono">Black Sunrise</b></h3>
+                    <img src="img/00182.png" class="prew w3-hover-opacity" onclick="modalOpen(this)" alt="Black Sunrise by F_TEK is licensed under CC BY-SA 4.0 <i class='lab la-creative-commons'></i><i class='lab la-creative-commons-by'></i><i class='lab la-creative-commons-sa'></i>">
+                    <p>
+                        Drawing based on the <a href="https://www.youtube.com/watch?v=RCuIzEZU2KQ">song</a> by Andreas Stone & Denniz Jamm.<br>
+                        Also, the new outro for my channel, Cookies NOT Included.<br>
+                        Timelapse available (later this day) <a href="https://www.youtube.com/watch?v=xWk0p1XucKE">there</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="height:3%;"></div>
+
+        <!-- Scripts -->
+        <!-- shows -->
+        <script>
+            function hideAll() {
+                var sel = document.getElementsByClassName('g');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'none';
+                }
+            }
+
+            function showAll() {
+                var sel = document.getElementsByClassName('g');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+            function showDig() {
+                hideAll();
+                var sel = document.getElementsByClassName('gdig');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+            function showPix() {
+                hideAll();
+                var sel = document.getElementsByClassName('gpix');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+            function showDra() {
+                hideAll();
+                var sel = document.getElementsByClassName('gdra');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+            function showPai() {
+                hideAll();
+                var sel = document.getElementsByClassName('gpai');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+
+            function showChrist() {
+                hideAll();
+                var sel = document.getElementsByClassName('gchrist');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+            function showJijiCa() {
+                hideAll();
+                var sel = document.getElementsByClassName('gjijica');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+            function showStream() {
+                hideAll();
+                var sel = document.getElementsByClassName('gstream');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                }
+            }
+        </script>
+
+        <!-- Modal -->
+        <div id="modal" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="las la-times"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+              <img id="img-modal" class="w3-image" style="max-height:75vh;" src="https://dummyimage.com/600x400/ffffff/000000.jpg&text=IMAGE+GOES+HERE" alt="">
+              <p id="txt-modal" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+        <script>
+            function modalOpen(element) {
+                document.getElementById("img-modal").src = element.src;
+                document.getElementById("modal").style.display = "block";
+                document.getElementById("txt-modal").innerHTML = element.alt;
+            }
+        </script>
+
+        <!-- Collapsible Menu -->
+        <script>
+            function menuExpand() {
+                var x = document.getElementById("burger");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
+        <!-- Ko-fi Integration -->
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+        <script>
+          kofiWidgetOverlay.draw('f_tek', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support Me',
+            'floating-chat.donateButton.background-color': '#d9534f',
+            'floating-chat.donateButton.text-color': '#fff'
+          });
+        </script>
+    </body>
+</html>

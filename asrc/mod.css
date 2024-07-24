@@ -9,6 +9,7 @@ html,body {height:100%;line-height:1.8;}
 .fancy{font-family:'NewTelegraphRegular',serif;}
 .hwrit{font-family:'FuntypeRegular',cursive;}
 .mono{font-family:'IntervalBook',monospace;}
+.pixel{font-family:'TerminalGrotesqueOpenRegular',sans-serif;}
 @keyframes blink {0%, 100% {opacity:1;} 50%{opacity:0;}}
 /* Image Classes */
 .prew{display:block;max-width:100%;max-height:30vh;width:auto;height:auto;margin-left:auto;margin-right:auto;}
@@ -21,6 +22,7 @@ html,body {height:100%;line-height:1.8;}
 .purple-bg{background:linear-gradient(135deg,#25092A,#9c27b0,#25092A);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
 .black-bg{background:linear-gradient(135deg,#000,#fff,#000);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 30s ease infinite;}
 .rainbow-bg{background:linear-gradient(135deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 60s ease infinite;}
+.blue-grey-bg{background:linear-gradient(135deg,#151B1E,#607d8b,#151B1E);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
 @keyframes ani-bg {0%, 100% {background-position:right bottom} 50%{background-position:left top}}
 /* Banners */
 .index-banner{background-position:center;background-size:cover;background-image:url('img/bgs/ind.jpg');min-height:25vh;}
