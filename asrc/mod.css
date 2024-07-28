@@ -1,6 +1,7 @@
 /* Base */
 body,h1,h2,h3,h4,h5,h6 {font-family:'PoppinsRegular',sans-serif;}
 html,body {height:100%;line-height:1.8;}
+iframe {border:none;margin:0px;}
 /* Text Effects */
 .blink{animation: blink 1.5s linear infinite;}
 .blink-1{animation: blink 1.5s linear infinite;}
