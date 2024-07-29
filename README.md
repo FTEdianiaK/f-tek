@@ -32,3 +32,4 @@
 **Services:**
 
 - [GoatCounter](https://www.goatcounter.com/) - Analytics
+- [FileOptimizer](https://nikkhokkho.sourceforge.io/?page=FileOptimizer) - Optimizing files for web
