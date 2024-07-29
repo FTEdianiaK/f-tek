@@ -7,10 +7,9 @@ iframe {border:none;margin:0px;}
 .blink-1{animation: blink 1.5s linear infinite;}
 .blink-2{animation: blink 1.5s linear infinite 0.5s;}
 .blink-3{animation: blink 1.5s linear infinite 1s;}
-.fancy{font-family:'NewTelegraphRegular',serif;}
-.hwrit{font-family:'FuntypeRegular',cursive;}
-.mono{font-family:'IntervalBook',monospace;}
-.pixel{font-family:'TerminalGrotesqueOpenRegular',sans-serif;}
+.fancy{font-family:serif;}
+.hwrit{font-family:cursive;}
+.mono{font-family:monospace;}
 @keyframes blink {0%, 100% {opacity:1;} 50%{opacity:0;}}
 /* Image Classes */
 .prew{display:block;max-width:100%;max-height:30vh;width:auto;height:auto;margin-left:auto;margin-right:auto;}
@@ -26,14 +25,26 @@ iframe {border:none;margin:0px;}
 .blue-grey-bg{background:linear-gradient(135deg,#151B1E,#607d8b,#151B1E);background-size:400% 400%;background-attachment:fixed;background-repeat:no-repeat;animation:ani-bg 300s ease infinite;}
 @keyframes ani-bg {0%, 100% {background-position:right bottom} 50%{background-position:left top}}
 /* Banners */
-.index-banner{background-position:center;background-size:cover;background-image:url('img/bgs/ind.jpg');min-height:25vh;}
-.art-banner{background-position:center;background-size:cover;background-image:url('img/bgs/art.jpg');min-height:25vh;}
-.code-banner{background-position:center;background-size:cover;background-image:url('img/bgs/cod.jpg');min-height:25vh;}
-.games-banner{background-position:center;background-size:cover;background-image:url('img/bgs/gam.jpg');min-height:25vh;}
-.social-banner{background-position:center;background-size:cover;background-image:url('img/bgs/soc.jpg');min-height:25vh;}
-.brand-banner{background-position:center;background-size:contain;background-repeat:repeat-x;background-image:url('img/fox.jpg');min-height:25vh;}
-.not-found-banner{background-position:center;background-size:cover;background-image:url('img/bgs/404.jpg');min-height:50vh;}
-.y2023-banner{background-position:center;background-size:cover;background-image:url('../rew/2023/bg.jpg');min-height:25vh;}
+@media (max-width:960px) {
+    .index-banner{background-position:center;background-size:cover;background-image:url('img/mq/bgs/ind.webp');min-height:25vh;}
+    .art-banner{background-position:center;background-size:cover;background-image:url('img/mq/bgs/art.webp');min-height:25vh;}
+    .code-banner{background-position:center;background-size:cover;background-image:url('img/mq/bgs/cod.webp');min-height:25vh;}
+    .games-banner{background-position:center;background-size:cover;background-image:url('img/mq/bgs/gam.webp');min-height:25vh;}
+    .social-banner{background-position:center;background-size:cover;background-image:url('img/mq/bgs/soc.webp');min-height:25vh;}
+    .brand-banner{background-position:center;background-size:contain;background-repeat:repeat-x;background-image:url('img/mq/fox.webp');min-height:25vh;}
+    .not-found-banner{background-position:center;background-size:cover;background-image:url('img/mq/bgs/404.webp');min-height:50vh;}
+    .y2023-banner{background-position:center;background-size:cover;background-image:url('../rew/2023/mq/bg.webp');min-height:25vh;}
+}
+@media (min-width:961px) {
+    .index-banner{background-position:center;background-size:cover;background-image:url('img/hq/bgs/ind.webp');min-height:25vh;}
+    .art-banner{background-position:center;background-size:cover;background-image:url('img/hq/bgs/art.webp');min-height:25vh;}
+    .code-banner{background-position:center;background-size:cover;background-image:url('img/hq/bgs/cod.webp');min-height:25vh;}
+    .games-banner{background-position:center;background-size:cover;background-image:url('img/hq/bgs/gam.webp');min-height:25vh;}
+    .social-banner{background-position:center;background-size:cover;background-image:url('img/hq/bgs/soc.webp');min-height:25vh;}
+    .brand-banner{background-position:center;background-size:contain;background-repeat:repeat-x;background-image:url('img/hq/fox.webp');min-height:25vh;}
+    .not-found-banner{background-position:center;background-size:cover;background-image:url('img/hq/bgs/404.webp');min-height:50vh;}
+    .y2023-banner{background-position:center;background-size:cover;background-image:url('../rew/2023/hq/bg.webp');min-height:25vh;}
+}
 /* W3-Addons */
 .w3-swide{letter-spacing:2px}
 .w3-pale-orange,.w3-hover-pale-orange:hover{color:#000!important;background-color:#ffeadd!important}
