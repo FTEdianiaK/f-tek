@@ -3,45 +3,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
-      <loc>http://f-tek.neocities.org/</loc>
+      <loc>https://f-tek.neocities.org/</loc>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
 
    <url>
-      <loc>http://f-tek.neocities.org/index.html</loc>
+      <loc>https://f-tek.neocities.org/index.html</loc>
       <priority>1.0</priority>
    </url>
 
    <url>
-      <loc>http://f-tek.neocities.org/art.html</loc>
-      <priority>0.6</priority>
-   </url>
-
-   <url>
-      <loc>http://f-tek.neocities.org/code.html</loc>
-      <priority>0.6</priority>
-   </url>
-
-   <url>
-      <loc>http://f-tek.neocities.org/games.html</loc>
-      <priority>0.6</priority>
-   </url>
-
-   <url>
-      <loc>http://f-tek.neocities.org/social.html</loc>
-      <priority>0.6</priority>
-   </url>
-
-   <url>
-      <loc>http://f-tek.neocities.org/brand.html</loc>
-      <priority>0.6</priority>
-   </url>
-
-   <url>
-      <loc>http://f-tek.neocities.org/rew/2023.html</loc>
+      <loc>https://f-tek.neocities.org/rew/2023.html</loc>
       <changefreq>never</changefreq>
+      <priority>0.4</priority>
+   </url>
+
+   <url>
+      <loc>https://f-tek.neocities.org/art.html</loc>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://f-tek.neocities.org/gal/index.html</loc>
       <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://f-tek.neocities.org/alb/index.html</loc>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://f-tek.neocities.org/code.html</loc>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://f-tek.neocities.org/games.html</loc>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://f-tek.neocities.org/social.html</loc>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://f-tek.neocities.org/brand.html</loc>
+      <priority>0.8</priority>
    </url>
    
    <url>
