@@ -7,9 +7,9 @@
 ### Passed checks
 
 - Validated by [W3C Validator](https://validator.w3.org/)
-	- All HTML and CSS is valid!
+	- All HTML and CSS files are **valid**!
 - Checked by [Yellow Lab Tools](https://yellowlab.tools/)
-	- All pages got an **A**!
+	- All pages got an **A**! (except for the Web Gallery and Web Album)
 
 ### Credits
 
