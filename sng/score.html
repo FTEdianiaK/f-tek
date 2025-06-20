@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SNG/score</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/svg" href="/sng/images/svg/joystick.svg">
+        <link rel="shortcut icon" type="image/png" href="/sng/images/fill/joystick.png">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+        <link rel="stylesheet" href="/style/w3.css">
+        <link rel="stylesheet" href="/style/mod.css">
+        <script src="/script/lazysizes.min.js" async=""></script>
+        <script type="text/javascript" src="/script/countup.js" defer></script>
+        <script type="text/javascript" src="script/table.js" defer></script>
+        <script type="text/javascript" src="/script/neon.js" defer></script>
+    </head>
+    <body class="w3-black blue-bg">
+        <!-- Back Button -->
+        <div class="w3-bar w3-white" role="navigation">
+            <a href="index.html" title="Return to SNG" class="w3-bar-item w3-xlarge w3-button w3-blue"><i class="ph ph-arrow-left"></i><i class="ph ph-joystick"></i></a>
+            <span class="w3-bar-item w3-right w3-xlarge w3-blue">%-?gendate-</span>
+        </div>
+
+        <!-- Unofficial Ko-fi Button -->
+        <div class="w3-bottom w3-padding-small" role="complementary" aria-labelledby="kofi">
+            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-blue w3-round" id="kofi"><i class="ph ph-coffee w3-large"></i> Support Me</a>
+        </div>
+
+        <!-- Header -->
+        <div class="score-banner w3-display-container" role="banner">
+            <div class="w3-display-middle w3-center w3-blue w3-padding" style="white-space:nowrap;">
+                <div class="w3-animate-zoom w3-hide-medium w3-hide-small">
+                    <p class="w3-xlarge no-space">Foxie and Hola welcome you to</p>
+                    <h1><b>FOXOLA OLYMPICS</b></h1>
+                </div>
+                <div class="w3-animate-zoom w3-hide-large">
+                    <p class="w3-large no-space">Foxie and Hola welcome you to</p>
+                    <h1 class="w3-xlarge"><b>FOXOLA OLYMPICS</b></h1>
+                </div>
+            </div>
+        </div>
+
+        <div style="height:3vh;"></div>
+
+        <main>
+            <div class="w3-container w3-center w3-pale-blue w3-padding-64 w3-stretch">
+                <h2 class="w3-xxxlarge"><i class="ph ph-cat"></i> Whisker-wards <i class="ph ph-trophy"></i></h2>
+                <div class="w3-row">
+                    <div class="w3-col w3-rest w3-padding-small">
+                        <h3 class="w3-xlarge no-space">Ultimate Wildcard</h3>
+                        <p class="w3-xxlarge rainbow-glow">%-?winnerall-</p>
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col w3-third w3-padding-small">
+                        <h3 class="w3-large">Foxbound Slingshot</h3>
+                        <p class="w3-xlarge neon neon-invert neon-blue">%-?winnerhielke-</p>
+                    </div>
+                    <div class="w3-col w3-third w3-padding-small">
+                        <h3 class="w3-large">Purr-fect Birdie</h3>
+                        <p class="w3-xlarge neon neon-invert neon-green">%-?winnergolf-</p>
+                    </div>
+                    <div class="w3-col w3-third w3-padding-small">
+                        <h3 class="w3-large">Fur-fueled Runner</h3>
+                        <p class="w3-xlarge neon neon-invert neon-red">%-?winnerdyinglight-</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height:3vh;"></div>
+
+            <!-- Templated tables need to have a unique id. -->
+
+            <div class="w3-container w3-center w3-pale-blue w3-padding-64 w3-stretch">
+                <h2 class="w3-xxxlarge"><i class="ph ph-paw-print"></i> Pawsprints <i class="ph ph-person-simple-run"></i></h2>
+                <div class="w3-row-padding">
+                    <div class="w3-col w3-third">
+                        <div class="w3-card w3-blue w3-round-large">
+                            <h3 class="w3-xxlarge">Hielke</h3>
+                            %-?hielke-
+                        </div>
+                    </div>
+                    <div class="w3-col w3-third">
+                        <div class="w3-card w3-green w3-round-large">
+                            <h3 class="w3-xxlarge">Golf</h3>
+                            %-?golf-
+                        </div>
+                    </div>
+                    <div class="w3-col w3-third">
+                        <div class="w3-card w3-red w3-round-large">
+                            <h3 class="w3-xxlarge">Dying Light</h3>
+                            %-?dyinglight-
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height:3vh;"></div>
+
+            <div class="w3-container w3-center w3-pale-blue w3-padding-64 w3-stretch">
+                <h3 class="w3-xxlarge" id="hielke">Hielke Leaderboards</h3>
+                %-?subhielke-
+            </div>
+        </main>
+
+        <div style="height:3vh;"></div>
+    </body>
+</html>

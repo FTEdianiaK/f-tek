@@ -4,165 +4,150 @@
         <title>F_TEK/brand</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/svg" href="asrc/img/lq/leaf.svg">
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="asrc/mod.css">
-        <script src="asrc/lazysizes.min.js" async=""></script>
-        <script data-goatcounter="https://f-tek.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <link rel="shortcut icon" type="image/svg" href="/images/svg/leaf.svg">
+        <link rel="shortcut icon" type="image/png" href="/images/fill/leaf.png">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+        <link rel="stylesheet" href="/style/w3.css">
+        <link rel="stylesheet" href="/style/mod.css">
+        <script src="/script/lazysizes.min.js" async=""></script>
+        <script type="text/javascript" src="/script/menu.js" defer></script>
     </head>
     <body class="w3-black purple-bg">
         <!-- Menu Bar -->
-        <div class="w3-bar w3-white">
-            <a href="index.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-red"><i class="las la-home"></i> Home</a>
-            <a href="art.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-orange"><i class="las la-paint-brush"></i> Art</a>
-            <a href="code.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-yellow"><i class="las la-code"></i> Code</a>
-            <a href="games.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-green"><i class="las la-gamepad"></i> Games</a>
-            <a href="social.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-blue"><i class="las la-link"></i> Social</a>
-            <a href="#" class="w3-bar-item w3-button w3-purple w3-hover-pale-purple"><i class="las la-user-alt"></i> Brand</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuExpand()"><i class="las la-bars"></i></a>
-        </div>
+        <nav>
+            <div class="w3-bar w3-white">
+                <a href="index.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-red"><i class="ph ph-house"></i> Home</a>
+                <a href="art.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-orange"><i class="ph ph-paint-brush"></i> Art</a>
+                <a href="code.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-yellow"><i class="ph ph-code"></i> Code</a>
+                <a href="games.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-green"><i class="ph ph-game-controller"></i> Games</a>
+                <a href="social.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-blue"><i class="ph ph-link"></i> Social</a>
+                <span class="w3-bar-item w3-unbutton w3-purple"><b><i class="ph ph-user"></i> Brand</b></span>
+                <button title="Navigation menu" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuExpand()"><i class="ph ph-list"></i></button>
+            </div>
 
-        <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white">
-            <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red"><i class="las la-home"></i> Home</a>
-            <a href="art.html" class="w3-bar-item w3-button w3-hover-pale-orange"><i class="las la-paint-brush"></i> Art</a>
-            <a href="code.html" class="w3-bar-item w3-button w3-hover-pale-yellow"><i class="las la-code"></i> Code</a>
-            <a href="games.html" class="w3-bar-item w3-button w3-hover-pale-green"><i class="las la-gamepad"></i> Games</a>
-            <a href="social.html" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="las la-link"></i> Social</a>
-        </div>
+            <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white">
+                <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red"><i class="ph ph-house"></i> Home</a>
+                <a href="art.html" class="w3-bar-item w3-button w3-hover-pale-orange"><i class="ph ph-paint-brush"></i> Art</a>
+                <a href="code.html" class="w3-bar-item w3-button w3-hover-pale-yellow"><i class="ph ph-code"></i> Code</a>
+                <a href="games.html" class="w3-bar-item w3-button w3-hover-pale-green"><i class="ph ph-game-controller"></i> Games</a>
+                <a href="social.html" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="ph ph-link"></i> Social</a>
+            </div>
+        </nav>
 
         <!-- Unofficial Ko-fi Button -->
-        <div class="w3-bottom w3-padding-small">
-            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-red w3-round"><i class="las la-coffee w3-large"></i> Support Me</a>
+        <div class="w3-bottom w3-padding-small" role="complementary" aria-labelledby="kofi">
+            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-purple w3-round" id="kofi"><i class="ph ph-coffee w3-large"></i> Support Me</a>
         </div>
 
         <!-- Header -->
-        <div class="brand-banner w3-display-container w3-grayscale-min">
+        <div class="brand-banner w3-display-container w3-grayscale-min" role="banner">
             <div class="w3-display-middle w3-center w3-purple w3-padding" style="white-space:nowrap;">
-                <div class="w3-animate-zoom">
-                    <h3>Hi, I'm F_TEK and this is</h3>
+                <div class="w3-animate-zoom w3-hide-medium w3-hide-small">
+                    <p class="w3-xlarge no-space">Hi, I'm F_TEK and this is</p>
                     <h1><b>MY BRAND</b></h1>
+                </div>
+                <div class="w3-animate-zoom w3-hide-large">
+                    <p class="w3-large no-space">Hi, I'm F_TEK and this is</p>
+                    <h1 class="w3-xlarge"><b>MY BRAND</b></h1>
                 </div>
             </div>
         </div>
 
         <!-- TOC -->
-        <div class="w3-container w3-center w3-transparent w3-stretch">
-            <a href="mailto:edaguncz@gmail.com" class="w3-button w3-purple w3-card"><i class="las la-envelope"></i> E-mail</a>
-            <a href="asrc/Foxie_EdianiaK_0xCFBCB7C9_public.asc" download target="_blank" class="w3-button w3-purple w3-card"><i class="las la-key"></i> Public OpenPGP Key</a>
-            <a href="https://gravatar.com/ftedianiak" download target="_blank" class="w3-button w3-purple w3-card"><i class="las la-user-circle"></i> Gravatar</a>
+        <div class="w3-container w3-center w3-transparent w3-stretch" role="region" aria-label="Links">
+            <a href="mailto:edaguncz@gmail.com" class="w3-button w3-purple w3-card"><i class="ph ph-envelope-simple"></i> E-mail</a>
+            <a href="https://gravatar.com/ftedianiak" download target="_blank" class="w3-button w3-purple w3-card"><img src="/images/svg/gravatar.svg" height="15" alt="" class="w3-invert"> Gravatar</a>
         </div>
 
-        <div style="height:3%;"></div>
+        <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-purple w3-padding-64 w3-stretch">
-            <h2 class="w3-swide fancy"><b>Contact form:</b></h2>
-            <iframe data-tally-src="https://tally.so/embed/mV8aD6?hideTitle=1&dynamicHeight=1" loading="lazy" style="width:100%;height:324px;" title="Contact Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-            <p>Or just send me an:</p>
-            <p><a href="mailto:edaguncz@gmail.com" class="w3-button w3-purple w3-card"><i class="las la-envelope"></i> E-mail</a></p>
-        </div>
+        <main>
+            <div class="w3-container w3-center w3-pale-purple w3-padding-64 w3-stretch">
+                <h2 class="w3-swide fancy"><b>Contact form:</b></h2>
+                <iframe data-tally-src="https://tally.so/embed/mV8aD6?hideTitle=1&dynamicHeight=1" class="lazyload" style="width:100%;height:324px;" title="Contact Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+                <p>Or just send me an:</p>
+                <p><a href="mailto:edaguncz@gmail.com" class="w3-button w3-purple w3-card"><i class="ph ph-envelope-simple"></i> E-mail</a></p>
+            </div>
 
-        <div style="height:3%;"></div>
+            <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-purple w3-padding-64 w3-stretch">
-            <h2 class="w3-swide fancy"><b>My OpenPGP keys:</b></h2>
-            <p><a href="asrc/Foxie_EdianiaK_0xCFBCB7C9_public.asc" download target="_blank" class="w3-button w3-purple w3-card"><i class="las la-key"></i> Current</a></p>
-            <ol class="w3-ul">
-                <li><b>[1]</b> - <b>CURRENT</b> - from 07/25/2024 until 07/25/2027 - <i>mDMEZqJP0RYJKwYB...</i></li>
-            </ol>
-        </div>
-
-        <div style="height:3%;"></div>
-
-        <div class="w3-container w3-center w3-pale-purple w3-padding-64 w3-stretch" id="license">
-            <h2 class="w3-swide fancy"><b>Licences I use:</b></h2>
-            <p class="w3-small"><i>Just to be clear, none of these give you the right to impersonate me. I suppose you could repost my stuff but, please, don't or *angry fox noises* (credit me at least).</i></p>
-            <div class="w3-row">
-                <div class="w3-col m4 w3-padding-small">
-                    <i class="lab la-creative-commons" style="font-size:64px;"></i><i class="lab la-creative-commons-by" style="font-size:64px;"></i><i class="lab la-creative-commons-sa" style="font-size:64px;"></i>
-                    <p style="line-height:1;"><b class="w3-xxxlarge fancy">CC BY-SA 4.0</b><br><i>for art, design, etc.</i></p>
-                    <ul class="w3-ul w3-border">
-                        <li><b class="fancy w3-xlarge">You are free to:</b></li>
-                        <li><i class="las la-share"></i> <b>Share</b><br>copy and redistribute the material in any medium or format for any purpose, even commercially.</li>
-                        <li><i class="las la-edit"></i> <b>Adapt</b><br>remix, transform, and build upon the material for any purpose, even commercially.</li>
-                        <li>The licensor cannot revoke these freedoms as long as you follow the license terms.</li>
-                        <li><b class="fancy w3-xlarge">Under the following terms:</b></li>
-                        <li><i class="lab la-creative-commons-by"></i> <b>Attribution</b><br>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. </li>
-                        <li><i class="lab la-creative-commons-sa"></i> <b>ShareAlike</b><br>If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
-                        <li><i class="lab la-creative-commons"></i> <b>No additional restrictions</b><br>You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</li>
-                    </ul>
-                    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="w3-button w3-purple"><i class="las la-file-alt"></i> Full Version</a></p>
-                </div>
-                <div class="w3-col m4 w3-padding-small">
-                    <i class="las la-camera" style="font-size:64px;"></i>
-                    <p style="line-height:1;"><b class="w3-xxxlarge fancy">Unsplash License</b><br><i>for stock photos</i></p>
-                    <ul class="w3-ul w3-border">
-                        <li>Unsplash visuals are made to be used freely. Our license reflects that.</li>
-                        <li><i class="lab la-creative-commons-nc"></i> All images can be <b>downloaded</b> and used for <b>free</b></li>
-                        <li><i class="las la-dollar-sign"></i> <b>Commercial</b> and <b>non-commercial</b> purposes</b></li>
-                        <li><i class="las la-file"></i> <b>No permission needed</b> (though attribution is appreciated!)</li>
-                        <li><b class="fancy w3-xlarge">What is not permitted</b></li>
-                        <li><i class="las la-edit"></i> Images cannot be <b>sold</b> without significant modification.</li>
-                        <li><i class="la la-ban"></i> Compiling images from Unsplash to replicate a similar or competing service.</li>
-                    </ul>
-                    <p><a href="https://unsplash.com/license" class="w3-button w3-purple"><i class="las la-file-alt"></i> Full Version</a></p>
-                </div>
-                <div class="w3-col m4 w3-padding-small">
-                    <img src="asrc/img/lq/lic/gnu.svg" height="64" width="64" alt="">
-                    <p style="line-height:1;"><b class="w3-xxxlarge fancy">GNU GPLv3</b><br><i>for software, games, etc.</i></p>
-                    <ul class="w3-ul w3-border">
-                        <li><b class="fancy w3-xlarge">Permissions</b></li>
-                        <li><i class="las la-dollar-sign"></i> <b>Commercial use</b><br>The licensed material and derivatives may be used for commercial purposes.</li>
-                        <li><i class="las la-share"></i> <b>Distribution</b><br>The licensed material may be distributed.</li>
-                        <li><i class="las la-edit"></i> <b>Modification</b><br>The licensed material may be modified.</li>
-                        <li><i class="las la-file-contract"></i> <b>Patent use</b><br>This license provides an express grant of patent rights from contributors.</li>
-                        <li><i class="las la-user-secret"></i> <b>Private use</b><br>The licensed material may be used and modified in private.</li>
-                        <li><b class="fancy w3-xlarge">Conditions</b></li>
-                        <li><i class="las la-code"></i> <b>Disclose source</b><br>Source code must be made available when the licensed material is distributed.</li>
-                        <li><i class="las la-copyright"></i> <b>License and copyright notice</b><br>A copy of the license and copyright notice must be included with the licensed material.</li>
-                        <li><i class="lab la-creative-commons-sa"></i> <b>Same license</b><br>Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used.</li>
-                        <li><i class="las la-file-code"></i> <b>State changes</b><br>Changes made to the licensed material must be documented.</li>
-                        <li><b class="fancy w3-xlarge">Limitations</b></li>
-                        <li><i class="las la-balance-scale"></i> <b>Liability</b><br>This license includes a limitation of liability.</li>
-                        <li><i class="las la-ban"></i> <b>Warranty</b><br>This license explicitly states that it does NOT provide any warranty.</li>
-                    </ul>
-                    <p><a href="https://choosealicense.com/licenses/gpl-3.0/" class="w3-button w3-purple"><i class="las la-file-alt"></i> Full Version</a></p>
+            <div class="w3-container w3-center w3-pale-purple w3-padding-64 w3-stretch" id="license">
+                <h2 class="w3-swide fancy"><b>Licences I use:</b></h2>
+                <p class="w3-small"><i>Just to be clear, none of these give you the right to impersonate me. I suppose you could repost my stuff but, please, don't or *angry fox noises* (credit me at least).</i></p>
+                <div class="w3-row">
+                    <div class="w3-col w3-third w3-padding-small">
+                        <img src="/images/svg/cc.svg" height="64" alt=""> <img src="/images/svg/cc-by.svg" height="64" alt=""> <img src="/images/svg/cc-sa.svg" height="64" alt="">
+                        <p style="line-height:1;"><b class="w3-xxxlarge fancy">CC BY-SA 4.0</b><br><i>for art, design, etc.</i></p>
+                        <ul class="w3-ul w3-border">
+                            <li><b class="fancy w3-xlarge">You are free to:</b></li>
+                            <li><i class="ph ph-share"></i> <b>Share</b><br>copy and redistribute the material in any medium or format for any purpose, even commercially.</li>
+                            <li><i class="ph ph-note-pencil"></i> <b>Adapt</b><br>remix, transform, and build upon the material for any purpose, even commercially.</li>
+                            <li>The licensor cannot revoke these freedoms as long as you follow the license terms.</li>
+                            <li><b class="fancy w3-xlarge">Under the following terms:</b></li>
+                            <li><img src="/images/svg/cc-by.svg" height="15" alt=""> <b>Attribution</b><br>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. </li>
+                            <li><img src="/images/svg/cc-sa.svg" height="15" alt=""> <b>ShareAlike</b><br>If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
+                            <li><img src="/images/svg/cc.svg" height="15" alt=""> <b>No additional restrictions</b><br>You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</li>
+                        </ul>
+                        <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="w3-button w3-purple"><i class="ph ph-file-alt"></i> Full Version</a></p>
+                    </div>
+                    <div class="w3-col w3-third w3-padding-small">
+                        <i class="ph ph-camera" style="font-size:64px;"></i>
+                        <p style="line-height:1;"><b class="w3-xxxlarge fancy">Unsplash License</b><br><i>for stock photos</i></p>
+                        <ul class="w3-ul w3-border">
+                            <li>Unsplash visuals are made to be used freely. Our license reflects that.</li>
+                            <li><img src="/images/svg/cc-nc.svg" height="15" alt=""> All images can be <b>downloaded</b> and used for <b>free</b></li>
+                            <li><i class="ph ph-currency-dollar-simple"></i> <b>Commercial</b> and <b>non-commercial</b> purposes</li>
+                            <li><i class="ph ph-file"></i> <b>No permission needed</b> (though attribution is appreciated!)</li>
+                            <li><b class="fancy w3-xlarge">What is not permitted</b></li>
+                            <li><i class="ph ph-note-pencil"></i> Images cannot be <b>sold</b> without significant modification.</li>
+                            <li><i class="ph ph-prohibit"></i> Compiling images from Unsplash to replicate a similar or competing service.</li>
+                        </ul>
+                        <p><a href="https://unsplash.com/license" class="w3-button w3-purple"><i class="ph ph-file-alt"></i> Full Version</a></p>
+                    </div>
+                    <div class="w3-col w3-third w3-padding-small">
+                        <img src="/images/fill/gpl.webp" style="height:64px;" alt="">
+                        <p style="line-height:1;"><b class="w3-xxxlarge fancy">GNU GPLv3</b><br><i>for software, games, etc.</i></p>
+                        <ul class="w3-ul w3-border">
+                            <li><b class="fancy w3-xlarge">Permissions</b></li>
+                            <li><i class="ph ph-currency-dollar-simple"></i> <b>Commercial use</b><br>The licensed material and derivatives may be used for commercial purposes.</li>
+                            <li><i class="ph ph-share"></i> <b>Distribution</b><br>The licensed material may be distributed.</li>
+                            <li><i class="ph ph-note-pencil"></i> <b>Modification</b><br>The licensed material may be modified.</li>
+                            <li><i class="ph ph-files"></i> <b>Patent use</b><br>This license provides an express grant of patent rights from contributors.</li>
+                            <li><i class="ph ph-detective"></i> <b>Private use</b><br>The licensed material may be used and modified in private.</li>
+                            <li><b class="fancy w3-xlarge">Conditions</b></li>
+                            <li><i class="ph ph-code"></i> <b>Disclose source</b><br>Source code must be made available when the licensed material is distributed.</li>
+                            <li><i class="ph ph-copyright"></i> <b>License and copyright notice</b><br>A copy of the license and copyright notice must be included with the licensed material.</li>
+                            <li><img src="/images/svg/cc-sa.svg" height="15" alt=""> <b>Same license</b><br>Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used.</li>
+                            <li><i class="ph ph-file-code"></i> <b>State changes</b><br>Changes made to the licensed material must be documented.</li>
+                            <li><b class="fancy w3-xlarge">Limitations</b></li>
+                            <li><i class="ph ph-scales"></i> <b>Liability</b><br>This license includes a limitation of liability.</li>
+                            <li><i class="ph ph-prohibit"></i> <b>Warranty</b><br>This license explicitly states that it does NOT provide any warranty.</li>
+                        </ul>
+                        <p><a href="https://choosealicense.com/licenses/gpl-3.0/" class="w3-button w3-purple"><i class="ph ph-file-alt"></i> Full Version</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div style="height:3%;"></div>
+            <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-purple w3-padding-64 w3-stretch">
-            <h2 class="w3-swide fancy"><b>All of my accounts use the following info:</b></h2>
-            <ul class="w3-ul w3-border w3-content w3-card">
-                <li><p><b>My profile picture.</b></p>
-                <img data-srcset="asrc/img/lq/fox.webp 600w, asrc/img/mq/fox.webp 1200w, asrc/img/hq/fox.webp 2400w" srcset="asrc/img/lq/fox.webp" src="asrc/img/mq/fox.webp" alt="a pixellated simplistic fox in a rainbow command-line style" class="w3-round-xlarge lazyload" style="height:20vh;"></li>
-                <li><p><b>Some combination/variation of my nickname and/or gametag.</b></p>
-                <p><i>Foxie, EdianiaK, F_TEK, F-TEK, FTEdianiaK, ...</i></p></li>
-                <li><p><b>My quote/tagline.</b></p>
-                <p><i>"Stay proud and unique!"</i></p></li>
-                <li><p><b>And, if possible, usually my banner.</b></p>
-                <img data-srcset="asrc/img/lq/bgs/ind.webp 600w, asrc/img/mq/bgs/ind.webp 1200w, asrc/img/hq/bgs/ind.webp 2400w" srcset="asrc/img/lq/bgs/ind.webp" src="asrc/img/mq/bgs/ind.webp" alt="a cutesy drawing of an anthro fox sitting on a bench in front of a cityscape" class="w3-round-xlarge lazyload" style="height:20vh;"></li>
-                <li><p><b>Not sure if it's me or think you found an imposter?</b></p>
-                <p><i>Use the contact form above.</i></p></li>
-                <li><img src="asrc/img/lq/dwight.gif" style="width:50%;" alt="a gif of a character saying 'Identity theft is not a joke, Jim!'"></li>
-            </ul>
-        </div>
+            <div class="w3-container w3-center w3-pale-purple w3-padding-64 w3-stretch">
+                <h2 class="w3-swide fancy"><b>All of my accounts use the following info:</b></h2>
+                <ul class="w3-ul w3-border w3-content w3-card">
+                    <li><p><b>My profile picture.</b></p>
+                    <img data-srcset="/images/miniature/fox.webp 600w, /images/fill/fox.webp 1200w" srcset="/images/miniature/fox.webp" src="/images/fill/fox.webp" alt="a pixellated simplistic fox in a rainbow command-line style" class="w3-round-xlarge lazyload" style="height:20vh;"></li>
+                    <li><p><b>Some combination/variation of my nickname and/or gametag.</b></p>
+                    <p><i>Foxie, EdianiaK, F_TEK, F-TEK, FTEdianiaK, ...</i></p></li>
+                    <li><p><b>My quote/tagline.</b></p>
+                    <p><i><q>Stay proud and unique!</q></i></p></li>
+                    <li><p><b>And, if possible, usually my banner.</b></p>
+                    <img data-srcset="/images/thumbnail/index.webp 600w, /images/preview/index.webp 1200w, /images/full/index.webp 2400w" srcset="/images/thumbnail/index.webp" src="/images/preview/index.webp" alt="a cutesy drawing of an anthro fox sitting on a bench in front of a cityscape" class="w3-round-xlarge lazyload" style="height:20vh;"></li>
+                    <li><p><b>Not sure if it's me or think you found an imposter?</b></p>
+                    <p><i>Use the contact form above.</i></p></li>
+                    <li><img src="/images/fill/dwight.gif" style="width:50%;" alt="a gif of a character saying 'Identity theft is not a joke, Jim!'"></li>
+                </ul>
+            </div>
+        </main>
 
-        <div style="height:3%;"></div>
-
-        <!-- Scripts -->
-        <!-- Collapsible Menu -->
-        <script>
-            function menuExpand() {
-                var x = document.getElementById("burger");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
+        <div style="height:3vh;"></div>
     </body>
 </html>

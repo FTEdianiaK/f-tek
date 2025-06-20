@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>...</title>
+    </head>
+    <body onload="dyNam();">
+        <p style="text-align: center;">
+            <b>Now showing in tab name:</b><br>
+            <i id="name"></i>
+        </p>
+
+        <script>
+            function dyNam() {
+                var query = new URLSearchParams(window.location.search);
+                if (query.has('n') == true) {
+                    var name = query.get('n');
+                } else {
+                    var name = '-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------';
+                }
+                document.title = name;
+                document.getElementById('name').innerHTML = name;
+            };
+        </script>
+    </body>
+</html>

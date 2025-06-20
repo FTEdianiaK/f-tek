@@ -4,161 +4,189 @@
         <title>F_TEK/games</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/svg" href="asrc/img/lq/leaf.svg">
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="asrc/mod.css">
-        <script src="asrc/lazysizes.min.js" async=""></script>
-        <script data-goatcounter="https://f-tek.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <link rel="shortcut icon" type="image/svg" href="/images/svg/leaf.svg">
+        <link rel="shortcut icon" type="image/png" href="/images/fill/leaf.png">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+        <link rel="stylesheet" href="/style/w3.css">
+        <link rel="stylesheet" href="/style/mod.css">
+        <script src="/script/lazysizes.min.js" async=""></script>
+        <script type="text/javascript" src="/script/menu.js" defer></script>
     </head>
     <body class="w3-black green-bg">
         <!-- Menu Bar -->
-        <div class="w3-bar w3-white">
-            <a href="index.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-red"><i class="las la-home"></i> Home</a>
-            <a href="art.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-orange"><i class="las la-paint-brush"></i> Art</a>
-            <a href="code.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-yellow"><i class="las la-code"></i> Code</a>
-            <a href="#" class="w3-bar-item w3-button w3-green w3-hover-pale-green"><i class="las la-gamepad"></i> Games</a>
-            <a href="social.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-blue"><i class="las la-link"></i> Social</a>
-            <a href="brand.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-purple"><i class="las la-user-alt"></i> Brand</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuExpand()"><i class="las la-bars"></i></a>
-        </div>
+        <nav>
+            <div class="w3-bar w3-white">
+                <a href="index.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-red"><i class="ph ph-house"></i> Home</a>
+                <a href="art.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-orange"><i class="ph ph-paint-brush"></i> Art</a>
+                <a href="code.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-yellow"><i class="ph ph-code"></i> Code</a>
+                <span class="w3-bar-item w3-unbutton w3-green"><b><i class="ph ph-game-controller"></i> Games</b></span>
+                <a href="social.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-blue"><i class="ph ph-link"></i> Social</a>
+                <a href="brand.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-purple"><i class="ph ph-user"></i> Brand</a>
+                <button title="Navigation menu" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuExpand()"><i class="ph ph-list"></i></button>
+            </div>
 
-        <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white">
-            <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red"><i class="las la-home"></i> Home</a>
-            <a href="art.html" class="w3-bar-item w3-button w3-hover-pale-orange"><i class="las la-paint-brush"></i> Art</a>
-            <a href="code.html" class="w3-bar-item w3-button w3-hover-pale-yellow"><i class="las la-code"></i> Code</a>
-            <a href="social.html" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="las la-link"></i> Social</a>
-            <a href="brand.html" class="w3-bar-item w3-button w3-hover-pale-purple"><i class="las la-user-alt"></i> Brand</a>
-        </div>
+            <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white">
+                <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red"><i class="ph ph-house"></i> Home</a>
+                <a href="art.html" class="w3-bar-item w3-button w3-hover-pale-orange"><i class="ph ph-paint-brush"></i> Art</a>
+                <a href="code.html" class="w3-bar-item w3-button w3-hover-pale-yellow"><i class="ph ph-code"></i> Code</a>
+                <a href="social.html" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="ph ph-link"></i> Social</a>
+                <a href="brand.html" class="w3-bar-item w3-button w3-hover-pale-purple"><i class="ph ph-user"></i> Brand</a>
+            </div>
+        </nav>
 
         <!-- Unofficial Ko-fi Button -->
-        <div class="w3-bottom w3-padding-small">
-            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-red w3-round"><i class="las la-coffee w3-large"></i> Support Me</a>
+        <div class="w3-bottom w3-padding-small" role="complementary" aria-labelledby="kofi">
+            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-green w3-round" id="kofi"><i class="ph ph-coffee w3-large"></i> Support Me</a>
         </div>
 
         <!-- Header -->
-        <div class="games-banner w3-display-container w3-grayscale-min">
+        <div class="games-banner w3-display-container w3-grayscale-min" role="banner">
             <div class="w3-display-middle w3-center w3-green w3-padding" style="white-space:nowrap;">
-                <div class="w3-animate-zoom">
-                    <h3>Hi, I'm F_TEK and these are</h3>
+                <div class="w3-animate-zoom w3-hide-medium w3-hide-small">
+                    <p class="w3-xlarge no-space">Hi, I'm F_TEK and these are</p>
                     <h1><b>MY AMATEUR GAMES</b></h1>
+                </div>
+                <div class="w3-animate-zoom w3-hide-large">
+                    <p class="w3-large no-space">Hi, I'm F_TEK and these are</p>
+                    <h1 class="w3-xlarge"><b>MY AMATEUR GAMES</b></h1>
                 </div>
             </div>
         </div>
 
         <!-- TOC -->
-        <div class="w3-container w3-center w3-transparent w3-stretch">
-            <a href="https://edianiak.itch.io/" class="w3-button w3-green w3-card"><i class="lab la-itch-io"></i> Itch</a>
-            <a href="https://www.planetminecraft.com/member/edianiak/" class="w3-button w3-green w3-card"><i class="las la-globe"></i> Planet Minecraft</a>
+        <div class="w3-container w3-center w3-transparent w3-stretch" role="region" aria-label="Links">
+            <a href="https://edianiak.itch.io/" class="w3-button w3-green w3-card"><img src="/images/svg/itchdotio.svg" height="15" alt="" class="w3-invert"> Itch</a>
+            <a href="https://www.planetminecraft.com/member/edianiak/" class="w3-button w3-green w3-card"><i class="ph ph-globe"></i> Planet Minecraft</a>
         </div>
 
-        <div style="height:3%;"></div>
+        <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-green w3-padding-64 w3-stretch">
-            <h2 class="w3-swide mono"><b>I make games in<span class="blink-1">.</span><span class="blink-2">.</span><span class="blink-3">.</span></b></h2>
-            <div class="w3-row">
-                <div class="w3-col m3 w3-padding-small">
-                    <img height="64" width="64" src="asrc/img/lq/eng/god.svg" alt="">
-                    <p><a href="https://godotengine.org/"><b class="w3-xxxlarge mono">GODOT</b></a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <img height="64" width="64" src="asrc/img/lq/eng/bit.svg" alt="">
-                    <p><a href="https://ledoux.itch.io/bitsy"><b class="w3-xxxlarge mono">BITSY</b></a><br>along with <a href="https://andrewyolland.com/borksy/">BORKSY</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <img height="64" width="64" src="asrc/img/lq/eng/twi.svg" alt="">
-                    <p><a href="https://twinery.org/"><b class="w3-xxxlarge mono">TWINE</b></a><br>the <a href="https://klembot.github.io/chapbook/">CHAPBOOK</a> story format</p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <img height="64" width="64" src="asrc/img/lq/eng/mic.webp" alt="">
-                    <p><a href="https://www.minecraft.net/en-us"><b class="w3-xxxlarge mono">MINECRAFT</b></a></p>
+        <main>
+            <div class="w3-container w3-center w3-pale-green w3-padding-64 w3-stretch">
+                <h2 class="w3-swide mono"><b>I make games in<span class="blink-1">.</span><span class="blink-2">.</span><span class="blink-3">.</span></b></h2>
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <img height="64" width="64" src="/images/svg/godotengine.svg" alt="">
+                        <p><a href="https://godotengine.org/"><b class="w3-xxxlarge mono">GODOT</b></a></p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <img height="64" width="64" src="/images/svg/bit.svg" alt="">
+                        <p><a href="https://ledoux.itch.io/bitsy"><b class="w3-xxxlarge mono">BITSY</b></a><br>along with <a href="https://andrewyolland.com/borksy/">BORKSY</a></p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <img height="64" width="64" src="/images/svg/twi.svg" alt="">
+                        <p><a href="https://twinery.org/"><b class="w3-xxxlarge mono">TWINE</b></a><br>the <a href="https://klembot.github.io/chapbook/">CHAPBOOK</a> story format</p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <img height="64" width="64" src="/images/fill/mic.webp" alt="">
+                        <p><a href="https://www.minecraft.net/en-us"><b class="w3-xxxlarge mono">MINECRAFT</b></a></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div style="height:3%;"></div>
+            <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-green w3-padding-64 w3-stretch">
-            <h2 class="w3-swide mono"><b>Finished games<span class="blink-1">.</span><span class="blink-2">.</span><span class="blink-3">.</span></b></h2>
-            <div class="w3-row">
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img class="lazyload" data-srcset="asrc/img/lq/gam/lme.webp 600w, asrc/img/mq/gam/lme.webp 1200w, asrc/img/hq/gam/lme.webp 2400w" srcset="asrc/img/lq/gam/lme.webp" src="asrc/img/mq/gam/lme.webp" style="width:100%;" alt="a hooded snake-like character standing on the surface of the moon">
+            <div class="w3-container w3-center w3-pale-green w3-padding-64 w3-stretch">
+                <h2 class="w3-swide mono"><b>Finished games<span class="blink-1">.</span><span class="blink-2">.</span><span class="blink-3">.</span></b></h2>
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img class="lazyload" data-srcset="/images/miniature/lonely.webp 600w, /images/fill/lonely.webp 1200w" srcset="/images/miniature/lonely.webp" src="/images/fill/lonely.webp" style="width:100%;" alt="a hooded snake-like character standing on the surface of the moon">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
+                        </div>
+                        <h3><b>Lonely Me</b></h3>
+                        <p><i>A story of hope and despair<br>Submission to 1-BIT JAM</i></p>
+                        <p class="w3-small">Embark on a journey across the (side) planet of Myesic and listen to the tale of the lonely Me, who hopes to one day meet his future bestie from Zemye. Help Me construct a device called Playta, that will hopefully be able to reach Zemye. Just steer clear of the sinister looking DPU.</p>
+                        <p><a href="https://edianiak.itch.io/lm" class="w3-button w3-green"><i class="ph ph-play"></i> Play</a>  <a href="https://github.com/FTEdianiaK/Lonely-Me" class="w3-button w3-green"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img class="lazyload" data-src="/images/fill/risk.webp" src="/images/fill/risk.webp" style="width:100%;" alt="a screenshot of the game">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
+                        </div>
+                        <h3><b>M.Y.O. Risk! Quiz</b></h3>
+                        <p><i>Make your very own Risk! Quiz, as seen on TV.</i></p>
+                        <p class="w3-small">Just prepare a set of categories, each with three questions ranging in difficulty. Fill out the game-board, show it to your friends/classroom/etc. and you're ready to play!</p>
+                        <p><a href="https://edianiak.itch.io/myo-rq" class="w3-button w3-green"><i class="ph ph-play"></i><i class="ph ph-download-simple"></i> Play/Download</a> <a href="https://github.com/FTEdianiaK/M.Y.O.-Risk-Quiz" class="w3-button w3-green"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <h3><b>Lonely Me</b></h3>
-                    <p><i>A story of hope and despair<br>Submission to 1-BIT JAM</i></p>
-                    <p class="w3-small">Embark on a journey across the (side) planet of Myesic and listen to the tale of the lonely Me, who hopes to one day meet his future bestie from Zemye. Help Me construct a device called Playta, that will hopefully be able to reach Zemye. Just steer clear of the sinister looking DPU.</p>
-                    <p><a href="https://edianiak.itch.io/lm" class="w3-button w3-green"><i class="las la-play"></i> Play</a>  <a href="https://github.com/FTEdianiaK/Lonely-Me" class="w3-button w3-green"><i class="las la-code"></i> Source Code</a></p>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img class="lazyload" data-src="/images/fill/az.webp" src="/images/fill/az.webp" style="width:100%;" alt="a screenshot of the game">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
+                        </div>
+                        <h3><b>M.Y.O. AZ Quiz</b></h3>
+                        <p><i>Make your very own AZ Quiz, as seen on TV.</i></p>
+                        <p class="w3-small">Just prepare a set of categories, each with three questions ranging in difficulty. Fill out the game-board, show it to your friends/classroom/etc. and you're ready to play!</p>
+                        <p><a href="https://edianiak.itch.io/myo-azq" class="w3-button w3-green"><i class="ph ph-play"></i><i class="ph ph-download-simple"></i> Play/Download</a>  <a href="https://github.com/FTEdianiaK/M.Y.O.-AZ-Quiz" class="w3-button w3-green"><i class="ph ph-code"></i> Source Code</a></p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img class="lazyload" data-src="/images/fill/complex.webp" src="/images/fill/complex.webp" style="width:100%;" alt="a screenshot of a Minecraft map's lobby/starting area">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
+                        </div>
+                        <h3><b>Really <s>Easy</s> Hard Puzzle Complex</b></h3>
+                        <p><i>Welcome, [TEST SUBJECT'S NAME HERE],</i></p>
+                        <p class="w3-small">to our facility of 10 really easy hard puzzles. With new HINT, DEBUG and RESET sub-systems included, what are you waiting for? JUMP... RIGHT... IN!</p>
+                        <p><a href="https://www.planetminecraft.com/project/really-hard-puzzle-complex/" class="w3-button w3-green"><i class="ph ph-download-simple"></i> Download</a> <a href="https://www.youtube.com/watch?v=SCWS4FyoAGg" class="w3-button w3-green"><i class="ph ph-play-circle"></i> Trailer</a></p>
+                    </div>
                 </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img class="lazyload" data-srcset="asrc/img/lq/gam/riq.webp 600w, asrc/img/mq/gam/riq.webp 1200w, asrc/img/hq/gam/riq.webp 2400w" srcset="asrc/img/lq/gam/riq.webp" src="asrc/img/mq/gam/riq.webp" style="width:100%;" alt="a screenshot of the game">
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img class="lazyload" data-src="/images/fill/paranormal.webp" src="/images/fill/paranormal.webp" style="width:100%;" alt="a pixel-art drawing of a graveyard with a red and a blue ghost in it">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
+                        </div>
+                        <h3><b>Paranormal Games</b></h3>
+                        <p><i>Olympic games, but with ghosts.</i></p>
+                        <p class="w3-small">This is my first game and it was made in the theme of "olympic games".</p>
+                        <p><a href="https://edianiak.itch.io/para-games" class="w3-button w3-green"><i class="ph ph-download-simple"></i> Download</a>  <a href="https://github.com/FTEdianiaK/Paranormal-Games" class="w3-button w3-green"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
-                    </div>
-                    <h3><b>M.Y.O. Risk! Quiz</b></h3>
-                    <p><i>Make your very own Risk! Quiz, as seen on TV.</i></p>
-                    <p class="w3-small">Just prepare a set of categories, each with three questions ranging in difficulty. Fill out the game-board, show it to your friends/classroom/etc. and you're ready to play!</p>
-                    <p><a href="https://edianiak.itch.io/myo-rq" class="w3-button w3-green"><i class="las la-play"></i><i class="las la-download"></i> Play/Download</a> <a href="https://github.com/FTEdianiaK/M.Y.O.-Risk-Quiz" class="w3-button w3-green"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img class="lazyload" data-srcset="asrc/img/lq/gam/azq.webp 600w, asrc/img/mq/gam/azq.webp 1200w, asrc/img/hq/gam/azq.webp 2400w" srcset="asrc/img/lq/gam/azq.webp" src="asrc/img/mq/gam/azq.webp" style="width:100%;" alt="a screenshot of the game">
-                    </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
-                    </div>
-                    <h3><b>M.Y.O. AZ Quiz</b></h3>
-                    <p><i>Make your very own AZ Quiz, as seen on TV.</i></p>
-                    <p class="w3-small">Just prepare a set of categories, each with three questions ranging in difficulty. Fill out the game-board, show it to your friends/classroom/etc. and you're ready to play!</p>
-                    <p><a href="https://edianiak.itch.io/myo-azq" class="w3-button w3-green"><i class="las la-play"></i><i class="las la-download"></i> Play/Download</a>  <a href="https://github.com/FTEdianiaK/M.Y.O.-AZ-Quiz" class="w3-button w3-green"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img class="lazyload" data-srcset="asrc/img/lq/gam/rhp.webp 600w, asrc/img/mq/gam/rhp.webp 1200w, asrc/img/hq/gam/rhp.webp 2400w" srcset="asrc/img/lq/gam/rhp.webp" src="asrc/img/mq/gam/rhp.webp" style="width:100%;" alt="a screenshot of a minecraft map's lobby/starting area">
-                    </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
-                    </div>
-                    <h3><b>Really <s>Easy</s> Hard Puzzle Complex</b></h3>
-                    <p><i>Welcome, "TEST SUBJECT'S NAME HERE",</i></p>
-                    <p class="w3-small">to our facility of 10 really easy hard puzzles. With new HINT, DEBUG and RESET sub-systems included, what are you waiting for? JUMP... RIGHT... IN!</p>
-                    <p><a href="https://www.planetminecraft.com/project/really-hard-puzzle-complex/" class="w3-button w3-green"><i class="las la-download"></i> Download</a> <a href="https://www.youtube.com/watch?v=SCWS4FyoAGg" class="w3-button w3-green"><i class="las la-play-circle"></i> Trailer</a></p>
                 </div>
             </div>
-            <div class="w3-row">
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img class="lazyload" data-srcset="asrc/img/lq/gam/par.webp 600w, asrc/img/mq/gam/par.webp 1200w, asrc/img/hq/gam/par.webp 2400w" srcset="asrc/img/lq/gam/par.webp" src="asrc/img/mq/gam/par.webp" style="width:100%;" alt="a pixel-art drawing of a graveyard with a red and a blue ghost in it">
+
+            <div style="height:3vh;"></div>
+
+            <div class="w3-container w3-center w3-pale-green w3-padding-64 w3-stretch">
+                <h2 class="w3-swide mono"><b>Released modpacks<span class="blink-1">.</span><span class="blink-2">.</span><span class="blink-3">.</span></b></h2>
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img class="lazyload" data-srcset="/images/thumbnail/revolution.webp 600w, /images/preview/revolution.webp 1200w, /images/full/revolution.webp 2400w" srcset="/images/thumbnail/revolution.webp" src="/images/preview/revolution.webp" style="width:100%;" alt="a hooded snake-like character standing on the surface of the moon">
+                        </div>
+                        <div class="w3-row w3-light-grey w3-small">
+                            <div class="w3-col w3-padding-small w3-green" style="width:100%">Fabric - 1.20.4</div>
+                        </div>
+                        <h3><b>The Fox Revolution</b></h3>
+                        <p><i>No creation comes without destruction.</i></p>
+                        <p class="w3-small">A modpack with a technological focus on Create, and an adventorous one at exploration and role-playing, with classes and origins. There's also a questbook with a story-line (can be safely ignored) and a walkthrough of Create and Botania.</p>
+                        <p><a href="https://github.com/FTEdianiaK/the-fox-revolution/releases/latest" class="w3-button w3-green"><i class="ph ph-download-simple"></i> Download</a>  <a href="https://github.com/FTEdianiaK/the-fox-revolution" class="w3-button w3-green"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-green" style="width:100%">DONE</div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img class="lazyload" data-srcset="/images/thumbnail/chocolate.webp 600w, /images/preview/chocolate.webp 1200w, /images/full/chocolate.webp 2400w" srcset="/images/thumbnail/chocolate.webp" src="/images/preview/chocolate.webp" style="width:100%;" alt="a hooded snake-like character standing on the surface of the moon">
+                        </div>
+                        <div class="w3-row w3-light-grey w3-small">
+                            <div class="w3-col w3-padding-small w3-green" style="width:100%">Fabric - 1.20.4</div>
+                        </div>
+                        <h3><b>Chocolate Bars</b></h3>
+                        <p><i>Second best after Vanilla!</i></p>
+                        <p class="w3-small">This modpack's purpose is to serve as an open alternative to those popular clients, such as Lunar.</p>
+                        <p><a href="https://github.com/FTEdianiaK/chocolate-bars/releases/latest" class="w3-button w3-green"><i class="ph ph-download-simple"></i> Download</a>  <a href="https://github.com/FTEdianiaK/chocolate-bars" class="w3-button w3-green"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <h3><b>Paranormal Games</b></h3>
-                    <p><i>Olympic games, but with ghosts.</i></p>
-                    <p class="w3-small">This is my first game and it was made in the theme of "olympic games".</p>
-                    <p><a href="https://edianiak.itch.io/para-games" class="w3-button w3-green"><i class="las la-download"></i> Download</a>  <a href="https://github.com/FTEdianiaK/Paranormal-Games" class="w3-button w3-green"><i class="las la-code"></i> Source Code</a></p>
                 </div>
             </div>
-        </div>
+        </main>
 
-        <div style="height:3%;"></div>
-
-        <!-- Scripts -->
-        <!-- Collapsible Menu -->
-        <script>
-            function menuExpand() {
-                var x = document.getElementById("burger");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
+        <div style="height:3vh;"></div>
     </body>
 </html>

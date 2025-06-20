@@ -47,3 +47,9 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
+
+# Test Comic
+com/*
+
+# Discord Link
+.well-known/*

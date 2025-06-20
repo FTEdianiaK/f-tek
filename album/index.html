@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>F_TEK/album</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/svg" href="/images/svg/leaf.svg">
+        <link rel="shortcut icon" type="image/png" href="/images/fill/leaf.png">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+        <link rel="stylesheet" href="/style/w3.css">
+        <link rel="stylesheet" href="/style/mod.css">
+        <script src="/script/lazysizes.min.js" async=""></script>
+        <script>
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            lazySizesConfig.loadHidden = false;
+            lazySizesConfig.loadMode = 1;
+        </script>
+    </head>
+    <body class="w3-black blue-grey-bg">
+        <!-- Back Button -->
+        <div class="w3-bar w3-white" role="navigation">
+            <a href="../art.html" title="Return to Art" class="w3-bar-item w3-xlarge w3-button w3-orange"><i class="ph ph-arrow-left"></i><i class="ph ph-paint-brush"></i></a>
+        </div>
+
+        <!-- Unofficial Ko-fi Button -->
+        <div class="w3-bottom w3-padding-small" role="complementary" aria-labelledby="kofi">
+            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-black w3-opacity-min w3-round" id="kofi"><i class="ph ph-coffee w3-large"></i> Support Me</a>
+        </div>
+
+        <!-- Header -->
+        <div class="blue-grey-ban w3-display-container w3-grayscale-min" role="banner">
+            <div class="w3-display-middle w3-center w3-blue-grey w3-padding" style="white-space:nowrap;">
+                <div class="w3-animate-zoom w3-hide-medium w3-hide-small">
+                    <p class="w3-xlarge no-space">Hi, I'm F_TEK and welcome to</p>
+                    <h1><b><button class="w3-button w3-card" onclick="optAlert();" onkeypress="optAlert();">MY WEB ALBUM</button></b></h1>
+                </div>
+                <div class="w3-animate-zoom w3-hide-large">
+                    <p class="w3-large no-space">Hi, I'm F_TEK and welcome to</p>
+                    <h1 class="w3-xlarge"><b><button class="w3-button w3-card" onclick="optAlert();" onkeypress="optAlert();">MY WEB ALBUM</button></b></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="w3-container w3-center w3-transparent w3-stretch" role="region" aria-label="Filters">
+            <button onclick="showAll()" onkeypress="showAll()" class="w3-button w3-white"><i class="ph ph-x"></i> All</button>
+            <span class="w3-unbutton w3-blue-grey w3-card">Tags:</span>
+            <button onclick="showSun()" onkeypress="showSun()" class="w3-button w3-yellow"><i class="ph ph-sun"></i> Sun</button>
+            <button onclick="showHeart()" onkeypress="showHeart()" class="w3-button w3-red"><i class="ph ph-heart"></i> Heart</button>
+            <button onclick="showTree()" onkeypress="showTree()" class="w3-button w3-green"><i class="ph ph-tree-evergreen"></i> Forest</button>
+            <button onclick="showCoffee()" onkeypress="showCoffee()" class="w3-button w3-brown"><i class="ph ph-coffee"></i> Coffee</button>
+            <button onclick="showFlag()" onkeypress="showFlag()" class="w3-button w3-blue"><i class="ph ph-flag"></i> Flag</button>
+            <button onclick="showHome()" onkeypress="showHome()" class="w3-button w3-light-grey"><i class="ph ph-house"></i> Building</button>
+            <button onclick="showFox()" onkeypress="showFox()" class="w3-button w3-orange"><img src="/images/svg/fox-tail.svg" height="15" alt=""> Fox</button>
+            <button onclick="showSpa()" onkeypress="showSpa()" class="w3-button w3-pink"><i class="ph ph-flower"></i> Flower</button>
+        </div>
+
+        <div style="height:3vh;"></div>
+
+        <main>
+            <div class="w3-container w3-center w3-blue-grey w3-padding-64 w3-stretch">
+                <p><i class="w3-card-4 w3-padding-small w3-white">The main purpose of all the photos here is to be used as stock imagery. Licensed under the <a href="https://unsplash.com/license">Unsplash License</a>.</i></p>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-col m2 w3-transparent w3-padding-small a asun">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00015.webp"
+                                srcset="images/thumbnail/00015.webp"
+                                src="images/full/00015.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="15"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#15</div>
+                            <div class="w3-display-bottomleft w3-yellow w3-padding-small"><i class="ph ph-sun"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a aheart">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00014.webp"
+                                srcset="images/thumbnail/00014.webp"
+                                src="images/full/00014.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="14"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#14</div>
+                            <div class="w3-display-bottomleft w3-red w3-padding-small"><i class="ph ph-heart"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a asun">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00013.webp"
+                                srcset="images/thumbnail/00013.webp"
+                                src="images/full/00013.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="13"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#13</div>
+                            <div class="w3-display-bottomleft w3-yellow w3-padding-small"><i class="ph ph-sun"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a atree">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00012.webp"
+                                srcset="images/thumbnail/00012.webp"
+                                src="images/full/00012.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="12"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#12</div>
+                            <div class="w3-display-bottomleft w3-green w3-padding-small"><i class="ph ph-tree-evergreen"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a atree">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00011.webp"
+                                srcset="images/thumbnail/00011.webp"
+                                src="images/full/00011.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="11"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#11</div>
+                            <div class="w3-display-bottomleft w3-green w3-padding-small"><i class="ph ph-tree-evergreen"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a atree">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00010.webp"
+                                srcset="images/thumbnail/00010.webp"
+                                src="images/full/00010.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="10"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#10</div>
+                            <div class="w3-display-bottomleft w3-green w3-padding-small"><i class="ph ph-tree-evergreen"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a acoffee">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00009.webp"
+                                srcset="images/thumbnail/00009.webp"
+                                src="images/full/00009.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="09"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#09</div>
+                            <div class="w3-display-bottomleft w3-brown w3-padding-small"><i class="ph ph-coffee"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a aflag">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00008.webp"
+                                srcset="images/thumbnail/00008.webp"
+                                src="images/full/00008.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="08"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#08</div>
+                            <div class="w3-display-bottomleft w3-blue w3-padding-small"><i class="ph ph-flag"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a ahome">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00007.webp"
+                                srcset="images/thumbnail/00007.webp"
+                                src="images/full/00007.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="07"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#07</div>
+                            <div class="w3-display-bottomleft w3-light-grey w3-padding-small"><i class="ph ph-house"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a asun">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00006.webp"
+                                srcset="images/thumbnail/00006.webp"
+                                src="images/full/00006.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="06"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#06</div>
+                            <div class="w3-display-bottomleft w3-yellow w3-padding-small"><i class="ph ph-sun"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a afox">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00005.webp"
+                                srcset="images/thumbnail/00005.webp"
+                                src="images/full/00005.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="05"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#05</div>
+                            <div class="w3-display-bottomleft w3-orange w3-padding-small"><img src="/images/svg/fox-tail.svg" height="15" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a afox">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00004.webp"
+                                srcset="images/thumbnail/00004.webp"
+                                src="images/full/00004.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="04"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#04</div>
+                            <div class="w3-display-bottomleft w3-orange w3-padding-small"><img src="/images/svg/fox-tail.svg" height="15" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a aspa">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00003.webp"
+                                srcset="images/thumbnail/00003.webp"
+                                src="images/full/00003.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="03"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#03</div>
+                            <div class="w3-display-bottomleft w3-pink w3-padding-small"><i class="ph ph-flower"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a aspa">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00002.webp"
+                                srcset="images/thumbnail/00002.webp"
+                                src="images/full/00002.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                onclick="window.location.href = this.src"
+                                onkeypress="window.location.href = this.src"
+                                role="link"
+                                tabindex="0"
+                                alt="Uh-oh!"
+                                id="02"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#02</div>
+                            <div class="w3-display-bottomleft w3-pink w3-padding-small"><i class="ph ph-flower"></i></div>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-transparent w3-padding-small a aspa">
+                        <div class="w3-display-container w3-black cont">
+                            <img
+                                data-srcset="images/full/00001.webp"
+                                srcset="images/thumbnail/00001.webp"
+                                src="images/full/00001.webp"
+                                class="lazyload w3-hover-opacity w3-hover-sepia full"
+                                alt="Uh-oh!"
+                                id="01"
+                            >
+                            <div class="w3-display-topright w3-white w3-padding-small">#01</div>
+                            <div class="w3-display-bottomleft w3-pink w3-padding-small"><i class="ph ph-flower"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div style="height:3vh;"></div>
+
+        <!-- Scripts -->
+        <!-- (Un)Optimized Alert -->
+        <script>
+            function optAlert() {
+                alert('The web album isn\'t truly optimized and can be rather resource heavy.\nIf you\'d like something more streamlined, feel free to use one of the other stock imagery links (Unsplash).');
+            };
+        </script>
+
+        <!-- Tags -->
+        <script>
+            function hideAll() {
+                var sel = document.getElementsByClassName('a');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'none';
+                };
+            };
+
+            function showAll() {
+                var sel = document.getElementsByClassName('a');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+
+            function showSun() {
+                hideAll();
+                var sel = document.getElementsByClassName('asun');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+            function showHeart() {
+                hideAll();
+                var sel = document.getElementsByClassName('aheart');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+            function showTree() {
+                hideAll();
+                var sel = document.getElementsByClassName('atree');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+            function showCoffee() {
+                hideAll();
+                var sel = document.getElementsByClassName('acoffee');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+            function showFlag() {
+                hideAll();
+                var sel = document.getElementsByClassName('aflag');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+            function showHome() {
+                hideAll();
+                var sel = document.getElementsByClassName('ahome');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+            function showFox() {
+                hideAll();
+                var sel = document.getElementsByClassName('afox');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+            function showSpa() {
+                hideAll();
+                var sel = document.getElementsByClassName('aspa');
+
+                for (var i = 0; i < sel.length; i ++) {
+                    sel[i].style.display = 'block';
+                };
+            };
+        </script>
+    </body>
+</html>

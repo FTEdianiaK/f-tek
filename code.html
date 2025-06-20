@@ -4,197 +4,203 @@
         <title>F_TEK/code</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/svg" href="asrc/img/lq/leaf.svg">
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="asrc/mod.css">
-        <script src="asrc/lazysizes.min.js" async=""></script>
-        <script data-goatcounter="https://f-tek.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <link rel="shortcut icon" type="image/svg" href="/images/svg/leaf.svg">
+        <link rel="shortcut icon" type="image/png" href="/images/fill/leaf.png">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+        <link rel="stylesheet" href="/style/w3.css">
+        <link rel="stylesheet" href="/style/mod.css">
+        <script src="/script/lazysizes.min.js" async=""></script>
+        <script type="text/javascript" src="/script/menu.js" defer></script>
     </head>
     <body class="w3-black yellow-bg">
         <!-- Menu Bar -->
-        <div class="w3-bar w3-white">
-            <a href="index.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-red"><i class="las la-home"></i> Home</a>
-            <a href="art.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-orange"><i class="las la-paint-brush"></i> Art</a>
-            <a href="#" class="w3-bar-item w3-button w3-yellow w3-hover-pale-yellow"><i class="las la-code"></i> Code</a>
-            <a href="games.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-green"><i class="las la-gamepad"></i> Games</a>
-            <a href="social.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-blue"><i class="las la-link"></i> Social</a>
-            <a href="brand.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-purple"><i class="las la-user-alt"></i> Brand</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuExpand()"><i class="las la-bars"></i></a>
-        </div>
+        <nav>
+            <div class="w3-bar w3-white">
+                <a href="index.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-red"><i class="ph ph-house"></i> Home</a>
+                <a href="art.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-orange"><i class="ph ph-paint-brush"></i> Art</a>
+                <span class="w3-bar-item w3-unbutton w3-yellow"><b><i class="ph ph-code"></i> Code</b></span>
+                <a href="games.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-green"><i class="ph ph-game-controller"></i> Games</a>
+                <a href="social.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-blue"><i class="ph ph-link"></i> Social</a>
+                <a href="brand.html" class="w3-bar-item w3-hide-small w3-button w3-hover-pale-purple"><i class="ph ph-user"></i> Brand</a>
+                <button title="Navigation menu" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuExpand()"><i class="ph ph-list"></i></button>
+            </div>
 
-        <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white">
-            <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red"><i class="las la-home"></i> Home</a>
-            <a href="art.html" class="w3-bar-item w3-button w3-hover-pale-orange"><i class="las la-paint-brush"></i> Art</a>
-            <a href="games.html" class="w3-bar-item w3-button w3-hover-pale-green"><i class="las la-gamepad"></i> Games</a>
-            <a href="social.html" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="las la-link"></i> Social</a>
-            <a href="brand.html" class="w3-bar-item w3-button w3-hover-pale-purple"><i class="las la-user-alt"></i> Brand</a>
-        </div>
+            <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white">
+                <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red"><i class="ph ph-house"></i> Home</a>
+                <a href="art.html" class="w3-bar-item w3-button w3-hover-pale-orange"><i class="ph ph-paint-brush"></i> Art</a>
+                <a href="games.html" class="w3-bar-item w3-button w3-hover-pale-green"><i class="ph ph-game-controller"></i> Games</a>
+                <a href="social.html" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="ph ph-link"></i> Social</a>
+                <a href="brand.html" class="w3-bar-item w3-button w3-hover-pale-purple"><i class="ph ph-user"></i> Brand</a>
+            </div>
+        </nav>
 
         <!-- Unofficial Ko-fi Button -->
-        <div class="w3-bottom w3-padding-small">
-            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-red w3-round"><i class="las la-coffee w3-large"></i> Support Me</a>
+        <div class="w3-bottom w3-padding-small" role="complementary" aria-labelledby="kofi">
+            <a href="https://ko-fi.com/ftedianiak" class="w3-button w3-yellow w3-round" id="kofi"><i class="ph ph-coffee w3-large"></i> Support Me</a>
         </div>
 
         <!-- Header -->
-        <div class="code-banner w3-display-container w3-grayscale-min">
+        <div class="code-banner w3-display-container w3-grayscale-min" role="banner">
             <div class="w3-display-middle w3-center w3-yellow w3-padding" style="white-space:nowrap;">
-                <div class="w3-animate-zoom">
-                    <h3>Hi, I'm F_TEK and these are</h3>
+                <div class="w3-animate-zoom w3-hide-medium w3-hide-small">
+                    <p class="w3-xlarge no-space">Hi, I'm F_TEK and these are</p>
                     <h1><b>MY CODING ENDEAVOURS</b></h1>
+                </div>
+                <div class="w3-animate-zoom w3-hide-large">
+                    <p class="w3-large no-space">Hi, I'm F_TEK and these are</p>
+                    <h1 class="w3-xlarge"><b>MY CODING ENDEAVOURS</b></h1>
                 </div>
             </div>
         </div>
 
         <!-- TOC -->
-        <div class="w3-container w3-center w3-transparent w3-stretch">
-            <a href="https://github.com/FTEdianiaK" class="w3-button w3-yellow w3-card"><i class="lab la-github"></i> GitHub</a>	
+        <div class="w3-container w3-center w3-transparent w3-stretch" role="region" aria-label="Links">
+            <a href="https://github.com/FTEdianiaK" class="w3-button w3-yellow w3-card"><img src="/images/svg/github.svg" height="15" alt=""> GitHub</a>
         </div>
 
-        <div style="height:3%;"></div>
+        <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
-            <div class="w3-row">
-                <div class="w3-col m6 w3-padding-small">
-                    <h2 class="w3-swide"><b>> My GitHub stats <span class="blink">_</span></b></h2>
-                    <img src="https://github-readme-stats.vercel.app/api?username=FTEdianiaK&hide_title=true&hide=prs,contribs&hide_rank=true&show_icons=true&theme=transparent&hide_border=true" alt="GitHub Profile Stats">
-                </div>
-                <div class="w3-col m6 w3-padding-small">
-                    <h2 class="w3-swide"><b>> I mostly code in <span class="blink">_</span></b></h2>
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=FTEdianiaK&hide_title=true&layout=donut&langs_count=6&theme=transparent&hide_border=true" alt="GitHub Language Stats">
+        <main>
+            <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
+                <div class="w3-row">
+                    <div class="w3-col w3-half w3-padding-small">
+                        <h2 class="w3-swide"><b>> My GitHub stats <span class="blink">_</span></b></h2>
+                        <img src="https://github-readme-stats.vercel.app/api?username=FTEdianiaK&hide_title=true&hide=prs,contribs&hide_rank=true&show_icons=true&theme=transparent&hide_border=true" alt="GitHub Profile Stats">
+                    </div>
+                    <div class="w3-col w3-half w3-padding-small">
+                        <h2 class="w3-swide"><b>> I mostly code in <span class="blink">_</span></b></h2>
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=FTEdianiaK&hide_title=true&layout=donut&langs_count=6&theme=transparent&hide_border=true" alt="GitHub Language Stats">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div style="height:3%;"></div>
+            <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
-            <h2 class="w3-swide"><b>> Active projects <span class="blink">_</span></b></h2>
-            <div class="w3-row">
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img src="https://dummyimage.com/1200x675/000000/ffeb3b.gif&text=W.I.P." style="width:100%;" alt="W.I.P.">
+            <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
+                <h2 class="w3-swide"><b>> Active projects <span class="blink">_</span></b></h2>
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;line-height:25vh;text-align:center;background-color:gold;">
+                            <span style="display:inline-block;vertical-align:middle;line-height:normal;font-size:64px;text-shadow:0px 0px 6px black;">🥜</span>
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-yellow" style="width:100%">DONE</div>
+                        </div>
+                        <h3><b>Gorpretest</b></h3>
+                        <p><i>A nutty taste test of running software.</i></p>
+                        <p class="w3-small">Check executable's (e.g. compiled C's) output against a list of given input/output pairs.</p>
+                        <p><a href="https://github.com/FTEdianiaK/gorpretest/releases/latest" class="w3-button w3-yellow"><i class="ph ph-download-simple"></i> Download</a> <a href="https://github.com/FTEdianiaK/gorpretest" class="w3-button w3-yellow"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-yellow " style="width:50%">W.I.P.</div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img data-srcset="/images/miniature/startup.webp 600w, /images/fill/startup.webp 1200w" srcset="/images/miniature/startup.webp" src="/images/fill/startup.webp" class="lazyload full" alt="a screenshot of a command prompt window">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-yellow" style="width:100%">DONE</div>
+                        </div>
+                        <h3><b>Startup Complete</b></h3>
+                        <p><i>Simple command line tool to let you know when your PC's ready to go.</i></p>
+                        <p class="w3-small">A simple command line tool that lets you know when your CPU load has been below the pre-set percentage for the pre-set amount of time or gives up after a pre-set amount of tries and ends with a pause so you know whether the app has already ran or not when you've let your computer turn on while being AFK.</p>
+                        <p><a href="https://github.com/FTEdianiaK/startup-complete/releases/latest" class="w3-button w3-yellow"><i class="ph ph-download-simple"></i> Download</a> <a href="https://github.com/FTEdianiaK/startup-complete" class="w3-button w3-yellow"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <p class="w3-small"><b>On 06/30/2024 PySimpleGUI, the library this project depended on, has shifted to an (at least for me) unusable commercial model, as such this project will have to be completely rewritten from the ground up for a new GUI library, when a suitable substitute is found.</b></p>
-                    <h3><b>Timetable Widget</b></h3>
-                    <p><i>A basic, portable timetable widget.</i></p>
-                    <p><a href="https://github.com/FTEdianiaK/timetable-widget/releases/latest" class="w3-button w3-yellow w3-disabled"><i class="las la-download"></i> Download</a> <a href="https://github.com/FTEdianiaK/timetable-widget" class="w3-button w3-yellow w3-disabled"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img src="https://dummyimage.com/1200x675/000000/ffeb3b.gif&text=W.I.P." style="width:100%;"  alt="W.I.P.">
-                    </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-yellow " style="width:75%">ALMOST DONE</div>
-                    </div>
-                    <h3><b>DigiOS</b></h3>
-                    <p><i>A proof of concept of an interactive OS made in Godot.</i></p>
-                    <p><a href="https://github.com/FTEdianiaK/digios/releases/latest" class="w3-button w3-yellow w3-disabled"><i class="las la-download"></i> Download</a> <a href="https://github.com/FTEdianiaK/digios" class="w3-button w3-yellow w3-disabled"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img data-srcset="asrc/img/lq/sow/stc.webp 600w, asrc/img/mq/sow/stc.webp 1200w, asrc/img/hq/sow/stc.webp 2400w" srcset="asrc/img/lq/sow/stc.webp" src="asrc/img/mq/sow/stc.webp" class="lazyload" style="width:200%;" alt="a screenshot of a command prompt window">
-                    </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-yellow " style="width:100%">DONE</div>
-                    </div>
-                    <h3><b>Startup Complete</b></h3>
-                    <p><i>Simple command line tool to let you know when your PC's ready to go.</i></p>
-                    <p class="w3-small">A simple command line tool that lets you know when your CPU load has been below the pre-set percentage for the pre-set amount of time or gives up after a pre-set amount of tries and ends with a pause so you know whether the app has already ran or not when you've let your computer turn on while being AFK.</p>
-                    <p><a href="https://github.com/FTEdianiaK/startup-complete/releases/latest" class="w3-button w3-yellow"><i class="las la-download"></i> Download</a> <a href="https://github.com/FTEdianiaK/startup-complete" class="w3-button w3-yellow"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img data-srcset="asrc/img/lq/sow/lib.webp 600w, asrc/img/mq/sow/lib.webp 1200w, asrc/img/hq/sow/lib.webp 2400w" srcset="asrc/img/lq/sow/lib.webp" src="asrc/img/mq/sow/lib.webp" class="lazyload" style="width:200%;" alt="an arrangement of windows of a green-themed library management software">
-                    </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-yellow" style="width:100%">DEPRECATED</div>
-                    </div>
-                    <p class="w3-small"><b>On 06/30/2024 PySimpleGUI, the library this project depended on, has shifted to an (at least for me) unusable commercial model, as such this project will have to be completely rewritten from the ground up for a new GUI library, when a suitable substitute is found.</b></p>
-                    <h3><b>Library Parrot-ex</b></h3>
-                    <p><i>A simple library index and card software.</i></p>
-                    <p class="w3-small">Grid view filled with important book details that can be sorted, searched through, edited and opened in most spreadsheet editors. Along with a helpful add window that can look up info from ISBN codes or redirect you to OpenLibrary records. Plus, a library card system, backups, undos, a small notepad and more!</p>
-                    <p><a href="https://github.com/FTEdianiaK/library-parrotex/releases/latest" class="w3-button w3-yellow"><i class="las la-download"></i> Download</a> <a href="https://github.com/FTEdianiaK/library-parrotex" class="w3-button w3-yellow"><i class="las la-code"></i> Source Code</a></p>
                 </div>
             </div>
-        </div>
 
-        <div style="height:3%;"></div>
+            <div style="height:3vh;"></div>
 
-        <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
-            <h2 class="w3-swide"><b>> Managed websites <span class="blink">_</span></b></h2>
-            <div class="w3-row">
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img data-srcset="asrc/img/lq/web/xyz-korp.webp 600w, asrc/img/mq/web/xyz-korp.webp 1200w, asrc/img/hq/web/xyz-korp.webp 2400w" srcset="asrc/img/lq/web/xyz-korp.webp" src="asrc/img/mq/web/xyz-korp.webp" class="lazyload" style="width:100%;" alt="logo with the words 'XYZ KORPORACE' on it">
+            <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
+                <h2 class="w3-swide"><b>> Managed websites <span class="blink">_</span></b></h2>
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img data-srcset="/images/miniature/xyz-korp.webp 600w, /images/fill/xyz-korp.webp 1200w" srcset="/images/miniature/xyz-korp.webp" src="/images/fill/xyz-korp.webp" class="lazyload" style="width:100%;" alt="logo with the words 'XYZ KORPORACE' on it">
+                        </div>
+                        <h3><b>Database of XYZ KORPORACE</b></h3>
+                        <p><i>All the necessary info for a project of Studio Filmu GO.</i></p>
+                        <p class="w3-small">EXCEPTION: This website is closed-source as its contents are not only copyrighted, but also limited to their employees only under an NDA.</p>
                     </div>
-                    <h3><b>Database of XYZ KORPORACE</b></h3>
-                    <p><i>All the necessary info for a project of Studio Filmu GO.</i></p>
-                    <p class="w3-small">EXCEPTION: This website is closed-source as its contents are not only copyrighted, but also limited to their employees only under an NDA.</p>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img data-srcset="/images/thumbnail/hola--tv.webp 600w, /images/preview/hola--tv.webp 1200w, /images/full/hola--tv.webp 2400w" srcset="/images/thumbnail/hola--tv.webp" src="/images/preview/hola--tv.webp" class="lazyload" style="width:125%;" alt="a screenshot of a website">
+                        </div>
+                        <h3><b>HOLA TV's Homepage</b></h3>
+                        <p><i>Managing this one for my friend, Hola__TV.</i></p>
+                        <p><a href="https://hola--tv.neocities.org/" class="w3-button w3-yellow"><i class="ph ph-link"></i> Go there!</a> <a href="https://github.com/FTEdianiaK/hola--tv" class="w3-button w3-yellow"><i class="ph ph-code"></i> Source Code</a></p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img data-srcset="/images/thumbnail/gallery.webp 600w, /images/preview/gallery.webp 1200w, /images/full/gallery.webp 2400w" srcset="/images/thumbnail/gallery.webp" src="/images/preview/gallery.webp" class="lazyload" style="width:125%;" alt="a screenshot of a website">
+                        </div>
+                        <h3><b>F_TEK's Web Gallery</b></h3>
+                        <p><i>The web gallery isn't truly optimized and can be rather resource heavy. If you'd like something more streamlined use one of the other art gallery links.</i></p>
+                        <p><a href="https://f-tek.neocities.org/gal/" class="w3-button w3-yellow"><i class="ph ph-link"></i> Go there!</a> <a href="https://github.com/FTEdianiaK/f-tek/tree/main/gal" class="w3-button w3-yellow"><i class="ph ph-code"></i> Source Code</a></p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;">
+                            <img data-srcset="/images/thumbnail/f-tek.webp 600w, /images/preview/f-tek.webp 1200w, /images/full/f-tek.webp 2400w" srcset="/images/thumbnail/f-tek.webp" src="/images/preview/f-tek.webp" class="lazyload" style="width:125%;" alt="a screenshot of a website">
+                        </div>
+                        <h3><b>F_TEK's Central Website</b></h3>
+                        <p><i>You're here right now.</i></p>
+                        <p><a href="https://github.com/FTEdianiaK/f-tek" class="w3-button w3-yellow"><i class="ph ph-code"></i> Source Code</a></p>
+                    </div>
                 </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img data-srcset="asrc/img/lq/web/hola--tv.webp 600w, asrc/img/mq/web/hola--tv.webp 1200w, asrc/img/hq/web/hola--tv.webp 2400w" srcset="asrc/img/lq/web/hola--tv.webp" src="asrc/img/mq/web/hola--tv.webp" class="lazyload" style="width:125%;" alt="a screenshot of a website">
+                <hr>
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <h3><b>Page w/ Dynamic Title</b></h3>
+                        <p><i>A low-effort snippet that can be used as a tab seperator.</i></p>
+                        <p class="w3-small">Just use ?n=[chosen title here] in the URL link.</p>
+                        <p><a href="dynam.html" class="w3-button w3-yellow"><i class="ph ph-link"></i> Go there!</a> <a href="https://github.com/FTEdianiaK/f-tek/blob/main/dynam.html" class="w3-button w3-yellow"><i class="ph ph-code"></i> Source Code</a></p>
                     </div>
-                    <h3><b>HOLA TV's Homepage</b></h3>
-                    <p><i>Managing this one for my friend, Hola__TV.</i></p>
-                    <p><a href="https://hola--tv.neocities.org/" class="w3-button w3-yellow"><i class="las la-link"></i> Go there!</a> <a href="https://github.com/FTEdianiaK/hola--tv" class="w3-button w3-yellow"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img data-srcset="asrc/img/lq/web/f-tek-gal.webp 600w, asrc/img/mq/web/f-tek-gal.webp 1200w, asrc/img/hq/web/f-tek-gal.webp 2400w" srcset="asrc/img/lq/web/f-tek-gal.webp" src="asrc/img/mq/web/f-tek-gal.webp" class="lazyload" style="width:125%;" alt="a screenshot of a website">
-                    </div>
-                    <h3><b>F_TEK's Web Gallery</b></h3>
-                    <p><i>The web gallery isn't truly optimized and can be rather resource heavy. If you'd like something more streamlined use one of the other art gallery links.</i></p>
-                    <p><a href="https://f-tek.neocities.org/gal/" class="w3-button w3-yellow"><i class="las la-link"></i> Go there!</a> <a href="https://github.com/FTEdianiaK/f-tek/tree/main/gal" class="w3-button w3-yellow"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;">
-                        <img data-srcset="asrc/img/lq/web/f-tek.webp 600w, asrc/img/mq/web/f-tek.webp 1200w, asrc/img/hq/web/f-tek.webp 2400w" srcset="asrc/img/lq/web/f-tek.webp" src="asrc/img/mq/web/f-tek.webp" class="lazyload" style="width:125%;" alt="a screenshot of a website">
-                    </div>
-                    <h3><b>F_TEK's Central Website</b></h3>
-                    <p><i>You're here right now.</i></p>
-                    <p><a href="https://github.com/FTEdianiaK/f-tek" class="w3-button w3-yellow"><i class="las la-code"></i> Source Code</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div style="height:3%;"></div>
-
-        <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
-            <h2 class="w3-swide"><b>> Archived projects <span class="blink">_</span></b></h2>
-            <div class="w3-row">
-                <div class="w3-col m3 w3-padding-small">
-                    <div style="height:25vh;overflow:hidden;" class="w3-grayscale-min">
-                        <img data-srcset="asrc/img/lq/sow/pix.webp 600w, asrc/img/mq/sow/pix.webp 1200w, asrc/img/hq/sow/pix.webp 2400w" srcset="asrc/img/lq/sow/pix.webp" src="asrc/img/mq/sow/pix.webp" class="lazyload" style="width:100%;" alt="a profile picture with a cartoony face on a blue background with a CRT filter over it">
-                    </div>
-                    <div class="w3-light-grey w3-small">
-                        <div class="w3-container w3-padding-small w3-dark-grey" style="width:100%">ARCHIVED</div>
-                    </div>
-                    <p class="w3-small"><b>Archived on 12/31/2023 due to not being used and me starting to worry about the APIs used.</b></p>
-                    <h3><b>Pixel</b></h3>
-                    <p><i>Discord bot for my private server, Foxie's Cookie Jar.</i></p>
-                    <p><a href="https://github.com/FTEdianiaK/pixel-discord-bot" class="w3-button w3-grayscale-min w3-yellow"><i class="las la-code"></i> Source Code</a></p>            
                 </div>
             </div>
-        </div>
 
-        <div style="height:3%;"></div>
+            <div style="height:3vh;"></div>
 
-        <!-- Scripts -->
-        <!-- Collapsible Menu -->
-        <script>
-            function menuExpand() {
-                var x = document.getElementById("burger");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
+            <div class="w3-container w3-center w3-pale-yellow w3-padding-64 w3-stretch">
+                <h2 class="w3-swide"><b>> Archived projects <span class="blink">_</span></b></h2>
+                <div class="w3-row">
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;line-height:25vh;text-align:center;background-color:lightgreen;" class="w3-grayscale-max">
+                            <span style="display:inline-block;vertical-align:middle;line-height:normal;font-size:64px;text-shadow:0px 0px 6px black;">📟</span>
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-black" style="width:100%">DEPRECATED</div>
+                        </div>
+                        <p class="w3-small"><b>Deprecated since 06/30/2024, when PySimpleGUI, the library this project depended on, has shifted to an (at least for me) unusable commercial project. It has never been finished to a production state.</b></p>
+                        <h3><b>Timetable Widget</b></h3>
+                        <p><i>A basic, portable timetable widget.</i></p>
+                        <p><a href="https://github.com/FTEdianiaK/timetable-widget/releases/latest" class="w3-button w3-yellow w3-grayscale-max"><i class="ph ph-download-simple"></i> Download</a> <a href="https://github.com/FTEdianiaK/timetable-widget" class="w3-button w3-yellow w3-grayscale-max"><i class="ph ph-code"></i> Source Code</a></p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;" class="w3-grayscale-max">
+                            <img data-srcset="/images/thumbnail/library.webp 600w, /images/preview/library.webp 1200w, /images/full/library.webp 2400w" srcset="/images/thumbnail/library.webp" src="/images/preview/library.webp" class="lazyload" style="width:200%;" alt="an arrangement of windows of a green-themed library management software">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-black" style="width:100%">DEPRECATED</div>
+                        </div>
+                        <p class="w3-small"><b>Deprecated since 06/30/2024, when PySimpleGUI, the library this project depended on, has shifted to an (at least for me) unusable commercial project.</b></p>
+                        <h3><b>Library Parrot-ex</b></h3>
+                        <p><i>A simple library index and card software.</i></p>
+                        <p class="w3-small">Grid view filled with important book details that can be sorted, searched through, edited and opened in most spreadsheet editors. Along with a helpful add window that can look up info from ISBN codes or redirect you to OpenLibrary records. Plus, a library card system, backups, undos, a small notepad and more!</p>
+                        <p><a href="https://github.com/FTEdianiaK/library-parrotex/releases/latest" class="w3-button w3-yellow w3-grayscale-max"><i class="ph ph-download-simple"></i> Download</a> <a href="https://github.com/FTEdianiaK/library-parrotex" class="w3-button w3-yellow w3-grayscale-max"><i class="ph ph-code"></i> Source Code</a></p>
+                    </div>
+                    <div class="w3-col w3-quarter w3-padding-small">
+                        <div style="height:25vh;overflow:hidden;" class="w3-grayscale-min">
+                            <img data-srcset="/images/miniature/os.webp 600w, /images/fill/os.webp 1200w" srcset="/images/miniature/os.webp" src="/images/fill/os.webp" class="lazyload" style="width:200%;" alt="a screenshot of a command prompt window in a video game">
+                        </div>
+                        <div class="w3-light-grey w3-small">
+                            <div class="w3-container w3-padding-small w3-dark-grey" style="width:100%">ARCHIVED</div>
+                        </div>
+                        <p class="w3-small"><b>Archived on 08/05/2024, the day it was released, as a done proof-of-concept prototype. There's no reason to continue the works on this project as it serves as a bare-bones OS for Godot for anyone interested to use.</b></p>
+                        <h3><b>DigiOS</b></h3>
+                        <p><i>A proof of concept of an interactive OS made in Godot.</i></p>
+                        <p><a href="https://github.com/FTEdianiaK/digios/releases/latest" class="w3-button w3-yellow w3-grayscale-min"><i class="ph ph-download-simple"></i> Download</a> <a href="https://github.com/FTEdianiaK/digios" class="w3-button w3-yellow w3-grayscale-min"><i class="ph ph-code"></i> Source Code</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div style="height:3vh;"></div>
     </body>
 </html>
