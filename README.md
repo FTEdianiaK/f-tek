@@ -11,7 +11,7 @@
 <p align="center">
     <img src="https://www.w3.org/Icons/valid-html40"> |
     <img src="https://www.w3.org/Icons/valid-css"> |
-    <img src="images/git/neocities-supporters.webp">
+    <img src="images/git/neocities-supporters.webp" height="31">
 </p>
 
 <p align="center">
