@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <img src="images/fill/fox.webp">
+    <img src="images/fill/fox.webp" width="50%">
     <br>
     F_TEK's Central Website
     <br>
