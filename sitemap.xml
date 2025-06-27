@@ -14,12 +14,6 @@
    </url>
 
    <url>
-      <loc>https://f-tek.neocities.org/rew/2023.html</loc>
-      <changefreq>never</changefreq>
-      <priority>0.4</priority>
-   </url>
-
-   <url>
       <loc>https://f-tek.neocities.org/art.html</loc>
       <priority>0.8</priority>
    </url>
@@ -55,9 +49,28 @@
    </url>
 
    <url>
-      <loc>https://f-tek.neocities.org/not_found.html</loc>
-      <changefreq>never</changefreq>
-      <priority>0.2</priority>
+       <loc>https://f-tek.neocities.org/sng/index.html</loc>
+       <priority>0.6</priority>
+   </url>
+
+   <url>
+       <loc>https://f-tek.neocities.org/sng/music.html</loc>
+       <priority>0.4</priority>
+   </url>
+
+   <url>
+       <loc>https://f-tek.neocities.org/sng/score.html</loc>
+       <priority>0.4</priority>
+   </url>
+
+   <url>
+       <loc>https://f-tek.neocities.org/sng/cheat.html</loc>
+       <priority>0.4</priority>
+   </url>
+
+   <url>
+       <loc>https://f-tek.neocities.org/sng/cheat_cs.html</loc>
+       <priority>0.4</priority>
    </url>
 
 </urlset>

@@ -1,8 +1,12 @@
 User-agent: *
-Disallow: /images/*
-Disallow: /rewind/*
-Disallow: /script/*
-Disallow: /style/*
+Disallow: /not_found.html
+Disallow: /images/
+Disallow: /rewind/
+Disallow: /script/
+Disallow: /style/
+Disallow: /album/images/
+Disallow: /gallery/images/
+Disallow: /sng/images/
 Crawl-delay: 5
 
 Sitemap: http://f-tek.neocities.org/sitemap.xml
